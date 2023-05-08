@@ -197,8 +197,12 @@ body {
 }
 
 .aboutus {
-  background-color: #a19b9b;
+  background-image: url("../img/header/aboutus.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   overflow: hidden;
+  height: 100vh;
 }
 .aboutus__box {
   display: flex;

@@ -160,8 +160,12 @@
 // aboutus
 
 .aboutus {
-	background-color: $grey;
+	background-image: url('../img/header/aboutus.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	overflow: hidden;
+	height: 100vh;
 
 	&__box {
 		display: flex;

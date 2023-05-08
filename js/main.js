@@ -38,6 +38,7 @@ function addedBackground () {
 	}
 }
 
+// SLIDER
 
 
 

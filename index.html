@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -17,28 +18,28 @@
 
     <!-- NAWIGACJA I BURGER ICON -->
     <nav class="nav__color">
-            <div class="nav__color-logo"> 
-                <a href="#"><img src="./img/logo/logo_drukarnia.png" alt="Logo firmy dombart" class="nav__logo"></a>
-                <div class="nav nav-desktop">
-                    <a class="nav__link" href="#">Strona Główna</a>
-                    <a class="nav__link" href="#offer">oferta</a>
-                    <a class="nav__link" href="#contact">kontakt</a>
-                </div>
-            </div>
-            <button class="hamburger hamburger--spin" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <div class="nav nav-mobile">
+        <div class="nav__color-logo">
+            <a href="#"><img src="./img/logo/logo_drukarnia.png" alt="Logo firmy dombart" class="nav__logo"></a>
+            <div class="nav nav-desktop">
                 <a class="nav__link" href="#">Strona Główna</a>
                 <a class="nav__link" href="#offer">oferta</a>
                 <a class="nav__link" href="#contact">kontakt</a>
             </div>
+        </div>
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="nav nav-mobile">
+            <a class="nav__link" href="#">Strona Główna</a>
+            <a class="nav__link" href="#offer">oferta</a>
+            <a class="nav__link" href="#contact">kontakt</a>
+        </div>
 
     </nav>
     <!-- HERO GRAFIKA -->
-    <header class="header">
+    <header lazy="true" class="header">
         <div class="header__text-box">
 
             <h1 class="header__title">Domb<span>Art</span></h1>
@@ -55,7 +56,7 @@
     </header>
 
     <!-- MAIN -->
-
+    <main>
 
         <section id="aboutus" class="aboutus section-padding">
             <div class="wrapper">
@@ -64,9 +65,9 @@
                 <h2 class="section-title">O nas</h2>
 
                 <div class="aboutus__box">
-                    <div class="aboutus__box-img">
+                    <!-- <div class="aboutus__box-img">
                         <img src="./img/header/aboutus.jpg" alt="paradise" class="aboutus__img">
-                    </div>
+                    </div> -->
                     <div class="aboutus__box-text">
                         <h3 class="aboutus__title">Nasza dwójka</h3>
                         <p class="aboutus__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi beatae,
@@ -75,17 +76,17 @@
                     </div>
                 </div>
 
-                <div class="aboutus__box">
-                    <div class="aboutus__box-img aboutus__box-img--right">
+                <!-- <div class="aboutus__box"> -->
+                    <!-- <div class="aboutus__box-img aboutus__box-img--right">
                         <img src="./img/header/dog.jpg" alt="góry" class="aboutus__img--right">
-                    </div>
-                    <div class="aboutus__box-text aboutus__box-text--right">
+                    </div> -->
+                    <!-- <div class="aboutus__box-text aboutus__box-text--right">
                         <h3 class="aboutus__title">Pomocniczka</h3>
                         <p class="aboutus__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi beatae,
                             eius voluptas possimus, molestiae quis sed quibusdam deleniti dignissimos ipsa et ab
                             doloribus libero, deserunt quae dolorum voluptate omnis aut?</p>
                     </div>
-                </div>
+                </div> -->
 
 
             </div>
@@ -93,6 +94,42 @@
 
 
 
+        <!-- <div class="slider">
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/10/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/11/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/12/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/13/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/14/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/15/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/16/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/17/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/18/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/19/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/28/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/29/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/33/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/53/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/54/200/300"></a></div>
+            <div class="item"><a href=""><img alt="logo" src="https://picsum.photos/id/55/200/300"></a></div>
+        </div>
+
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img alt="logo" src="./img/header/ab.jpg"></div>
+                <div class="swiper-slide"><img alt="logo" src="./img/header/dog.jpg"></div>
+                <div class="swiper-slide"><img alt="logo" src="https://picsum.photos/id/10/200/300"></div>
+                <div class="swiper-slide"><img alt="logo" src="https://picsum.photos/id/10/200/300"></div>
+                <div class="swiper-slide"><img alt="logo" src="https://picsum.photos/id/10/200/300"></div>
+                <div class="swiper-slide"><img alt="logo" src="https://picsum.photos/id/10/200/300"></div>
+                <div class="swiper-slide"><img alt="logo" src="https://picsum.photos/id/10/200/300"></div>
+                <div class="swiper-slide"><img alt="logo" src="https://picsum.photos/id/10/200/300"></div>
+                <div class="swiper-slide"><img alt="logo" src="https://picsum.photos/id/10/200/300"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div> -->
 
 
 
@@ -101,57 +138,7 @@
 
 
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+       
 
 
 
@@ -160,14 +147,31 @@
 
 
 
-
-        <footer class="footer">
-            <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> || Domb<span
-                    class="color">Art</span></p>
-        </footer>
-
-        <script src="js/main.js"></script>
     </main>
+    <footer class="footer">
+        <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> || Domb<span class="color">Art</span>
+        </p>
+    </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="js/main.js"></script>
+    <!-- <script>
+         var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 100,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script> -->
 </body>
 
 </html>
