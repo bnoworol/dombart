@@ -129,16 +129,13 @@
 			padding-top: 10px;
 			position: static;
 		}
-		position: sticky;
 		&__color {
 			position: absolute;
 			position: fixed;
-			z-index: 1;
+			z-index: 2;
 			&-logo {
-				z-index: 2;
 				display: flex;
-				justify-content: space-around;
-				// background-color: #fff;
+				justify-content: space-around;	
 			}
 		}
 		&-desktop {
