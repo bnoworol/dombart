@@ -116,7 +116,7 @@
 	position: relative;
 	top: 0;
 	width: 100vw;
-	height: 400px;
+	height: 100vh;
 	background-image: url('../img/header/small.jpg');
 	background-size: cover;
 	background-position: center;
@@ -160,18 +160,18 @@
 // aboutus
 
 .aboutus {
-	display: flex;
 	background-image: url('../img/header/aboutus.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	overflow: hidden;
-	height: 100vh;
+	height: auto;
 	&__boxes {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: row;
+		flex-wrap: wrap;
 		gap: 25px;
 	}
 	&__box {

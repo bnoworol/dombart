@@ -3,7 +3,6 @@
 		padding: 2em 2em;
 	}
 	.header {
-		height: 100vh;
 		background-image: url('../img/header/big.jpg');
 		&__hero-shadow {
 			width: 100%;
@@ -58,18 +57,7 @@
 		&__box {
 			display: flex;
 			flex-direction: row;
-			&-img--right {
-				order: 1;
-			}
-		}
-		&__img {
-			max-width: 90%;
-			object-fit: cover;
-			margin-bottom: 1em;
-			&--right {
-				max-width: 85%;
-				width: 1000px;
-			}
+			
 		}
 		&__title {
 			position: relative;
@@ -84,6 +72,7 @@
 			font-size: 2rem;
 			padding: 0 2em;
 		}
+	}
 	}
 	@media (max-height: 725px) {
 		.header {
@@ -121,7 +110,7 @@
 			}
 		}
 	}
-}
+
 
 @media (min-width: 1050px) {
 	.nav {
