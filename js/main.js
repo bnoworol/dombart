@@ -29,9 +29,10 @@ const handleNav = () => {
 
 
 function addedBackground () {
-	const navbarY = navDesktop.offsetTop
-	if ( navbarY >= 280) {
-		navDesktop.style.backgroundColor = 'rgba(0,0,0, .3)'
+	const navbarY = window.pageYOffset
+	console.log(navbarY);
+	if ( navbarY >= 200) {
+		navDesktop.style.backgroundColor = '#783678c9'
 	} else {
 		navDesktop.style.backgroundColor = 'transparent'
 	}
