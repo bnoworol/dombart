@@ -92,6 +92,7 @@
 				transform: translateX(-50%);
 				border: 1px solid $white;
 				border-radius: 50%;
+				z-index: 3;
 
 				&::before {
 					position: absolute;
