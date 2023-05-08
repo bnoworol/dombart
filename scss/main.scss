@@ -160,17 +160,25 @@
 // aboutus
 
 .aboutus {
+	display: flex;
 	background-image: url('../img/header/aboutus.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	overflow: hidden;
 	height: 100vh;
-
-	&__box {
+	&__boxes {
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		gap: 25px;
+	}
+	&__box {
 		margin: 2em 0;
+		box-shadow: 2px 2px 18px 5px rgba(0, 0, 0, 1) inset;
+		background-color: rgba(0, 0, 0, 0.6);
+		max-width: 500px;
 		&__img {
 			max-width: 100%;
 			margin-bottom: 1em;

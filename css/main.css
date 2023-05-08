@@ -197,6 +197,7 @@ body {
 }
 
 .aboutus {
+  display: flex;
   background-image: url("../img/header/aboutus.jpg");
   background-size: cover;
   background-position: center;
@@ -204,10 +205,18 @@ body {
   overflow: hidden;
   height: 100vh;
 }
-.aboutus__box {
+.aboutus__boxes {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+}
+.aboutus__box {
   margin: 2em 0;
+  box-shadow: 2px 2px 18px 5px rgb(0, 0, 0) inset;
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 500px;
 }
 .aboutus__box__img {
   max-width: 100%;
