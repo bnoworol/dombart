@@ -98,9 +98,7 @@
 		text-align: center;
 		display: inline-block;
 		margin: 0.5em;
-		// margin-right: 0.5em;
 		padding: 0.5em 0.5em;
-		// padding-right: 0.5em;
 		font-size: 2.3rem;
 		color: $darker;
 		text-transform: uppercase;
@@ -115,7 +113,7 @@
 // header
 .header {
 	position: relative;
-	top: 0;
+	top: 0px;
 	width: 100vw;
 	height: 100vh;
 	background-image: url('../img/header/header_jasne.png');
@@ -212,6 +210,29 @@
 	}
 }
 
+
+// REALIZACJE
+
+.realization {
+	.slider {
+		display: flex;
+		width: 60%;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 2.5rem;
+	}
+	.item {
+		animation: animate 60s linear infinite;
+	}
+	.item img
+		{
+			min-width: 200px;
+			padding: 0 30px;
+		}
+	.slider:hover .item {
+		animation-play-state: paused;
+	}
+}
 // footer
 .footer {
 	display: flex;

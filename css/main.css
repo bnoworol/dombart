@@ -46,6 +46,22 @@ body {
     opacity: 0;
   }
 }
+@-webkit-keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1800px, 0, 0);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1800px, 0, 0);
+  }
+}
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -156,7 +172,7 @@ body {
 
 .header {
   position: relative;
-  top: 0;
+  top: 0px;
   width: 100vw;
   height: 100vh;
   background-image: url("../img/header/header_jasne.png");
@@ -249,6 +265,26 @@ body {
   padding-bottom: 2.5em;
   color: #D2266F;
   text-align: center;
+}
+
+.realization .slider {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+.realization .item {
+  -webkit-animation: animate 60s linear infinite;
+          animation: animate 60s linear infinite;
+}
+.realization .item img {
+  min-width: 200px;
+  padding: 0 30px;
+}
+.realization .slider:hover .item {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .footer {
@@ -375,6 +411,7 @@ body {
 @media (min-width: 1050px) {
   .aboutus {
     background-attachment: fixed;
+    height: 90vh;
   }
   .nav__logo {
     padding-top: 10px;
@@ -417,5 +454,8 @@ body {
   }
   .hamburger {
     display: none;
+  }
+  .realization {
+    height: 83.1vh;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -119,6 +119,7 @@
 @media (min-width: 1050px) {
 	.aboutus {
 		background-attachment: fixed;
+		height: 90vh;
 	}
 	.nav {
 		&__logo {
@@ -162,5 +163,8 @@
 	}
 	.hamburger {
 		display: none;
+	}
+	.realization {
+		height: 83.1vh;
 	}
 }
