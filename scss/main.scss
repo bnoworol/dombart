@@ -125,6 +125,10 @@
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
+	.size {
+		font-size: 4rem;
+		padding-bottom: 1rem;
+	}
 	&__hero-shadow {
 		position: absolute;
 		top: 0;
@@ -155,6 +159,7 @@
 		margin: 0 1em;
 		z-index: 100000;
 		font-size: 2.5rem;
+		text-transform: uppercase;
 	}
 	&__arrow {
 		display: none;
@@ -176,14 +181,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
-		margin-bottom: 32px 0;
+		width: 90%;
+		// margin-bottom: 32px 0;
 	}
 	&__box {
 		margin: 2em 0;
 		box-shadow: 2px 2px 18px 5px rgba(255, 255, 255, 1) inset;
 		background-color: rgba(255, 255, 255, 0.6);
-		max-width: 80%;
+		max-width: 90%;
 		height: auto;
 	}
 	&__title {
@@ -193,7 +198,7 @@
 		margin: 4rem auto;
 	}
 	&__text {
-		font-size: 2rem;
+		font-size: .7rem;
 		margin: 2rem;
 		padding-bottom: 2.5em;
 		color: $main-color;

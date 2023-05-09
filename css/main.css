@@ -181,6 +181,10 @@ body {
   background-position: center;
   z-index: 0;
 }
+.header .size {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
 .header__hero-shadow {
   position: absolute;
   top: 0;
@@ -211,6 +215,7 @@ body {
   margin: 0 1em;
   z-index: 100000;
   font-size: 2.5rem;
+  text-transform: uppercase;
 }
 .header__arrow {
   display: none;
@@ -230,14 +235,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-bottom: 32px 0;
+  width: 90%;
 }
 .aboutus__box {
   margin: 2em 0;
   box-shadow: 2px 2px 18px 5px rgb(255, 255, 255) inset;
   background-color: rgba(255, 255, 255, 0.6);
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
 }
 .aboutus__title {
@@ -247,7 +251,7 @@ body {
   margin: 4rem auto;
 }
 .aboutus__text {
-  font-size: 2rem;
+  font-size: 0.7rem;
   margin: 2rem;
   padding-bottom: 2.5em;
   color: #6a197d;
