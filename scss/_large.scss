@@ -2,6 +2,9 @@
 	.section-padding {
 		padding: 2em 2em;
 	}
+	.section-title {
+		padding: 30px 0;
+	}
 	.header {
 		// background-image: url('../img/header/big.jpg');
 
@@ -11,7 +14,7 @@
 			z-index: -1;
 		}
 		&__title {
-			padding-top: 1.25em;
+			padding-top: 1em;
 			font-size: 12rem;
 			text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 			color: $white;
@@ -23,6 +26,12 @@
 		&__text {
 			text-align: center;
 			font-size: 3.8rem;
+			&-title {
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 5rem;
+				padding-bottom: 2rem;
+			}
 		}
 		&__arrow-icon {
 			width: 50px;
@@ -51,8 +60,9 @@
 			letter-spacing: 2px;
 		}
 		&__text {
+			margin: 4rem;
+			padding-bottom: 0 2em;
 			font-size: 2rem;
-			padding: 0 2em;
 		}
 	}
 }
