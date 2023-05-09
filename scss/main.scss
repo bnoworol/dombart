@@ -34,8 +34,9 @@
 }
 .nav__logo {
 	position: relative;
-	top: 10px;
-	left: 10px;
+	top: 1rem;
+	left: 3rem;
+	width: 150px;
 }
 .nav__color {
 	position: absolute;
@@ -117,7 +118,7 @@
 	top: 0;
 	width: 100vw;
 	height: 100vh;
-	background-image: url('../img/header/small.jpg');
+	background-image: url('../img/header/header_jasne.png');
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
@@ -134,7 +135,7 @@
 		position: relative;
 		text-align: center;
 		font-size: 6rem;
-		padding-top: 2em;
+		padding-top: 4em;
 		color: $white;
 		text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 		margin-bottom: 1em;
@@ -145,7 +146,9 @@
 	}
 	&__text {
 		position: relative;
-
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		margin-top: 2em;
 		text-align: center;
 		color: $white;
@@ -155,15 +158,17 @@
 	&__arrow {
 		display: none;
 	}
+	&__logo {
+		width: 60%;
+	}
 }
 // MAIN
 // aboutus
 
 .aboutus {
-	background-image: url('../img/header/aboutus.jpg');
+	background-image: url('../img/aboutus/aboutus_small.jpg');
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	overflow: hidden;
 	height: auto;
 	&__boxes {
@@ -196,13 +201,14 @@
 		color: $text;
 		font-size: 3rem;
 		text-align: center;
-		margin-bottom: 0.5em;
+		margin: 4rem auto;
 	}
 	&__text {
 		font-size: 2rem;
-		margin-bottom: 2em;
+		margin: 2rem;
 		padding-bottom: 2.5em;
 		color: $text;
+		text-align: center;
 	}
 }
 
