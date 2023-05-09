@@ -9,7 +9,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
 }
 
 body {
@@ -23,6 +22,12 @@ body {
 
 .disable {
   overflow: hidden;
+}
+
+.seo {
+  font-size: 1px;
+  color: transparent;
+  background-color: transparent;
 }
 
 @-webkit-keyframes pulse {
@@ -175,7 +180,7 @@ body {
   top: 0px;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/header/header_jasne.png");
+  background-image: url("../img/header/jasne_header.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -409,6 +414,9 @@ body {
   }
 }
 @media (min-width: 1050px) {
+  html {
+    scroll-padding-top: 75px;
+  }
   .aboutus {
     background-attachment: fixed;
     height: 90vh;
