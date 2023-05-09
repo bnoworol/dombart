@@ -6,6 +6,7 @@ const allNavItemsClose = document.querySelectorAll('.nav')
 const footerYear = document.querySelector('.footer__year')
 const navDesktop = document.querySelector('.nav__color-logo')
 
+
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navMobile.classList.toggle('nav-mobile--active')
@@ -30,20 +31,12 @@ const handleNav = () => {
 
 function addedBackground () {
 	const navbarY = window.pageYOffset
-	console.log(navbarY);
 	if ( navbarY >= 200) {
-		navDesktop.style.backgroundColor = '#783678c9'
+		navDesktop.style.backgroundColor = '#f5f5f5'
 	} else {
 		navDesktop.style.backgroundColor = 'transparent'
 	}
 }
-
-// SLIDER
-
-
-
-
-
 
 [navBtn, allNavItemsClose].map(allNavItemsClose => navBtn.addEventListener('click', handleNav))
 
