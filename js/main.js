@@ -5,7 +5,8 @@ const body = document.getElementById('body')
 const allNavItemsClose = document.querySelectorAll('.nav')
 const footerYear = document.querySelector('.footer__year')
 const navDesktop = document.querySelector('.nav__color-logo')
-
+const arrow = document.querySelector('.header__arrow')
+const html = document.querySelector('html')
 
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
@@ -29,6 +30,10 @@ const handleNav = () => {
 }
 
 
+arrow.addEventListener('click', () => {
+	html.style.scrollPaddingTop = '78' + 'px'
+})
+
 function addedBackground () {
 	const navbarY = window.pageYOffset
 	if ( navbarY >= 200) {
@@ -37,6 +42,9 @@ function addedBackground () {
 		navDesktop.style.backgroundColor = 'transparent'
 	}
 }
+
+
+
 
 [navBtn, allNavItemsClose].map(allNavItemsClose => navBtn.addEventListener('click', handleNav))
 

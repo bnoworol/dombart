@@ -231,6 +231,7 @@ body {
   background-position: center;
   overflow: hidden;
   height: auto;
+  padding-bottom: 3rem;
 }
 .aboutus__boxes {
   display: flex;
@@ -394,9 +395,6 @@ body {
   }
 }
 @media (min-width: 1050px) {
-  html {
-    scroll-padding-top: 75px;
-  }
   .aboutus {
     background-attachment: fixed;
   }
