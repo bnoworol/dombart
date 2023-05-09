@@ -15,7 +15,7 @@
 			font-size: 12rem;
 			text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 			color: $white;
-			margin-bottom: 0.5em;
+			margin-bottom: 0.3em;
 		}
 		span {
 			color: $sec-color;
@@ -169,5 +169,8 @@
 	}
 	.realization {
 		height: 83.1vh;
+		.section-title {
+			font-size: 6rem;
+		}
 	}
 }
