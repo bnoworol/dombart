@@ -254,7 +254,7 @@ body {
   margin: 2rem auto;
 }
 .aboutus__text {
-  font-size: 1rem;
+  font-size: 1.7rem;
   margin: 1rem;
   padding-bottom: 1.5em;
   color: #6a197d;
@@ -359,6 +359,9 @@ body {
     margin: 4rem;
     padding-bottom: 0 2em;
     font-size: 2rem;
+  }
+  .aboutus__text-size {
+    font-size: 3rem;
   }
 }
 @media (max-height: 725px) {

@@ -63,6 +63,9 @@
 			margin: 4rem;
 			padding-bottom: 0 2em;
 			font-size: 2rem;
+			&-size {
+				font-size: 3rem;
+			}
 		}
 	}
 }
@@ -105,9 +108,6 @@
 }
 
 @media (min-width: 1050px) {
-	// html {
-	// 	scroll-padding-top: 75px;
-	// }
 	.aboutus {
 		background-attachment: fixed;
 	}
