@@ -261,6 +261,9 @@ body {
   font-weight: 400;
   text-align: center;
 }
+.aboutus__text-size {
+  font-weight: bold;
+}
 
 .realization .section-title {
   font-size: 4rem;
