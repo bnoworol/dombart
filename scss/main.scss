@@ -17,7 +17,7 @@
 	width: fit-content;
 	font-size: 6rem;
 	text-align: center;
-	color: $text;
+	color: $main-color;
 	font-weight: 200;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -70,7 +70,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		background-color: $secondary;
+		background-color: $main-color;
 		transform: translateY(-102%);
 		transition: transform 0.3s;
 		z-index: 10;
@@ -94,7 +94,7 @@
 		margin: 0.5em;
 		padding: 0.5em 0.5em;
 		font-size: 2.3rem;
-		color: $darker;
+		color: $white;
 		text-transform: uppercase;
 		text-decoration: none;
 		transition: color 0.3s;
@@ -117,15 +117,18 @@
 	align-items: center;
 	gap: 25px;
 	a {
-		width: 70px;height: 70px;
-		display: flex;justify-content: center;align-items: center;
+		width: 70px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	img {
 		padding: 10px;
 		width: 100%;
 	}
 	.instagram {
-			border-radius: 50%;
+		border-radius: 50%;
 	}
 }
 // header
@@ -253,13 +256,51 @@
 }
 // footer
 .footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1em;
+	background-image: url('../img/header/ciemne_header.jpg');
+	// padding: 1em;
+	&-down {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid black;
+		width: 100%;
+		padding: 0.5em;
+	}
+	&-up {
+		display: flex;
+		flex-direction: row;
+		padding-top: 1em;
+		padding-left: 2em;
+		&-left {
+			width: 50%;
+		}
+		&-right {
+			width: 50%;
+		}
+	}
 	&__color {
 		color: $sec-color;
 		font-weight: bold;
+	}
+	.display {
+		display: flex;
+		flex-direction: row;
+	}
+	.phone-number {
+		&-text {
+			padding: 1em .5em 1em 0;
+		}
+		&-number {
+			padding: 1em 1em 1em 0;
+		}
+	}
+	.email-adress {
+		&-text {
+			padding: 1em .5em 1em 0;
+		}
+		&-number {
+			padding: 1em 1em 1em 0;
+		}
 	}
 }
 

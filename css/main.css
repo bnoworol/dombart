@@ -86,7 +86,7 @@ body {
   width: fit-content;
   font-size: 6rem;
   text-align: center;
-  color: #D2266F;
+  color: #6a197d;
   font-weight: 200;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -139,7 +139,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 116, 255, 0.7882352941);
+  background-color: #6a197d;
   transform: translateY(-102%);
   transition: transform 0.3s;
   z-index: 10;
@@ -162,7 +162,7 @@ body {
   margin: 0.5em;
   padding: 0.5em 0.5em;
   font-size: 2.3rem;
-  color: #000000;
+  color: #f5f5f5;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s;
@@ -316,14 +316,47 @@ body {
 }
 
 .footer {
+  background-image: url("../img/header/ciemne_header.jpg");
+}
+.footer-down {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  border-top: 1px solid black;
+  width: 100%;
+  padding: 0.5em;
+}
+.footer-up {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+  padding-left: 2em;
+}
+.footer-up-left {
+  width: 50%;
+}
+.footer-up-right {
+  width: 50%;
 }
 .footer__color {
   color: #a612c7;
   font-weight: bold;
+}
+.footer .display {
+  display: flex;
+  flex-direction: row;
+}
+.footer .phone-number-text {
+  padding: 1em 0.5em 1em 0;
+}
+.footer .phone-number-number {
+  padding: 1em 1em 1em 0;
+}
+.footer .email-adress-text {
+  padding: 1em 0.5em 1em 0;
+}
+.footer .email-adress-number {
+  padding: 1em 1em 1em 0;
 }
 
 @media (min-width: 992px) {
@@ -350,12 +383,12 @@ body {
   }
   .header__text {
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 3rem;
   }
   .header__text-title {
     text-transform: uppercase;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3.5rem;
     padding-bottom: 2rem;
   }
   .header__arrow-icon {
