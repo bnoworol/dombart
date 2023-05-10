@@ -317,6 +317,7 @@ body {
 
 .footer {
   background-image: url("../img/header/ciemne_header.jpg");
+  background-size: cover;
 }
 .footer-down {
   display: flex;
@@ -331,6 +332,7 @@ body {
   flex-direction: row;
   padding-top: 1em;
   padding-left: 2em;
+  height: 200px;
 }
 .footer-up-left {
   width: 50%;
@@ -346,17 +348,42 @@ body {
   display: flex;
   flex-direction: row;
 }
-.footer .phone-number-text {
-  padding: 1em 0.5em 1em 0;
+.footer .phone-number {
+  display: flex;
+  align-content: space-around;
+  font-weight: bold;
+  padding: 0.5em 1em;
 }
 .footer .phone-number-number {
-  padding: 1em 1em 1em 0;
+  padding: 0 1em;
 }
-.footer .email-adress-text {
-  padding: 1em 0.5em 1em 0;
+.footer .phone-number-text {
+  display: flex;
+  flex-direction: column;
+}
+.footer .email-adress {
+  display: flex;
+  align-content: space-around;
+  font-weight: bold;
+  padding: 0.5em 1em;
 }
 .footer .email-adress-number {
-  padding: 1em 1em 1em 0;
+  padding: 0 1em;
+}
+.footer .follow-facebook {
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+.footer .follow-facebook img {
+  width: 50%;
+}
+.footer .adress {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.footer .adress-text {
+  padding: 0.3em 1em;
 }
 
 @media (min-width: 992px) {
