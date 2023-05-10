@@ -329,16 +329,20 @@ body {
 }
 .footer-up {
   display: flex;
-  flex-direction: row;
-  padding-top: 1em;
-  padding-left: 2em;
-  height: 200px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.footer-up h4 {
+  font-size: 3rem;
 }
 .footer-up-left {
-  width: 50%;
+  padding: 1em 0;
 }
 .footer-up-right {
-  width: 50%;
+  padding: 1em 0;
 }
 .footer__color {
   color: #a612c7;
@@ -347,6 +351,8 @@ body {
 .footer .display {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .footer .phone-number {
   display: flex;
@@ -452,6 +458,80 @@ body {
   }
   .aboutus__text-size {
     font-size: 3rem;
+  }
+  .footer {
+    background-image: url("../img/header/ciemne_header.jpg");
+    background-size: cover;
+  }
+  .footer-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 0.5em;
+  }
+  .footer-up {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-left: 2em;
+    height: 230px;
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+    width: 100vw;
+  }
+  .footer-up-left {
+    width: 50%;
+  }
+  .footer-up-right {
+    width: 50%;
+  }
+  .footer__color {
+    color: #a612c7;
+    font-weight: bold;
+  }
+  .footer .display {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .phone-number {
+    display: flex;
+    align-content: space-around;
+    font-weight: bold;
+    padding: 0.5em 1em;
+  }
+  .footer .phone-number-number {
+    padding: 0 1em;
+  }
+  .footer .phone-number-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .email-adress {
+    display: flex;
+    align-content: space-around;
+    font-weight: bold;
+    padding: 0.5em 1em;
+  }
+  .footer .email-adress-number {
+    padding: 0 1em;
+  }
+  .footer .follow-facebook {
+    margin-bottom: 1em;
+    padding-left: 1em;
+  }
+  .footer .follow-facebook img {
+    width: 50%;
+  }
+  .footer .adress {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  .footer .adress-text {
+    padding: 0.3em 1em;
   }
 }
 @media (max-height: 725px) {

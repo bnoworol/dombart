@@ -268,15 +268,19 @@
 	}
 	&-up {
 		display: flex;
-		flex-direction: row;
-		padding-top: 1em;
-		padding-left: 2em;
-		height: 200px;
-		&-left {
-			width: 50%;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		h4 {
+			font-size: 3rem;
+		}
+		&-left{
+			padding: 1em 0;
 		}
 		&-right {
-			width: 50%;
+			padding: 1em 0;
 		}
 	}
 	&__color {
@@ -286,6 +290,8 @@
 	.display {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 	.phone-number {
 		display: flex;
