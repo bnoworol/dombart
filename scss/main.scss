@@ -13,7 +13,7 @@
 }
 .section-title {
 	position: relative;
-	margin: 0 auto .5em;
+	margin: 0 auto 0.5em;
 	width: fit-content;
 	font-size: 6rem;
 	text-align: center;
@@ -104,6 +104,30 @@
 	}
 }
 
+// NAV SOCIALMEDIA
+
+.nav__socialmedia {
+	position: fixed;
+	right: 0;
+	top: 100px;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	a {
+		width: 70px;height: 70px;
+		display: flex;justify-content: center;align-items: center;
+	}
+	img {
+		padding: 10px;
+		width: 100%;
+	}
+	.instagram {
+			border-radius: 50%;
+	}
+}
 // header
 .header {
 	position: relative;
@@ -114,7 +138,7 @@
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
-	
+
 	&__hero-shadow {
 		position: absolute;
 		top: 0;
@@ -200,7 +224,6 @@
 		&-size {
 			font-weight: bold;
 		}
-		
 	}
 }
 

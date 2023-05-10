@@ -12,7 +12,7 @@ const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navMobile.classList.toggle('nav-mobile--active')
 	body.classList.toggle('disable')
-	
+
 	allNavItems.forEach(item => {
 		item.addEventListener('click', () => {
 			navMobile.classList.remove('nav-mobile--active')
@@ -29,25 +29,20 @@ const handleNav = () => {
 	})
 }
 
-
 arrow.addEventListener('click', () => {
 	html.style.scrollPaddingTop = '90' + 'px'
 })
 
-function addedBackground () {
+function addedBackground() {
 	const navbarY = window.pageYOffset
-	if ( navbarY >= 200) {
+	if (navbarY >= 200) {
 		navDesktop.style.backgroundColor = '#f5f5f5'
 	} else {
 		navDesktop.style.backgroundColor = 'transparent'
 	}
 }
 
-
-
-
-[navBtn, allNavItemsClose].map(allNavItemsClose => navBtn.addEventListener('click', handleNav))
-
+;[navBtn, allNavItemsClose].map(allNavItemsClose => navBtn.addEventListener('click', handleNav))
 
 function handleCurrentYear() {
 	const year = new Date().getFullYear()
@@ -55,7 +50,3 @@ function handleCurrentYear() {
 }
 handleCurrentYear()
 document.addEventListener('scroll', addedBackground)
-
-
-
-
