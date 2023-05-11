@@ -30,7 +30,7 @@ const handleNav = () => {
 }
 
 arrow.addEventListener('click', () => {
-	html.style.scrollPaddingTop = '70' + 'px'
+	html.style.scrollPaddingTop = '140' + 'px'
 })
 
 function addedBackground() {
