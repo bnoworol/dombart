@@ -239,8 +239,13 @@
 // REALIZACJE
 
 .realization {
+	height: auto;
 	.section-title {
 		font-size: 4rem;
+	}
+	img {
+		width: 500px;
+		height: 500px;
 	}
 	.slider {
 		display: flex;
@@ -248,9 +253,11 @@
 		margin: 0 auto;
 		overflow: hidden;
 		padding: 2.5rem;
+		height: 500px;
 	}
 	.item {
 		animation: animate 60s linear infinite;
+		
 	}
 	.item img {
 		min-width: 200px;
