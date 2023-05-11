@@ -73,6 +73,11 @@ body {
   max-width: 1200px;
   width: 100%;
 }
+.wrapper-footer {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
 
 .section-padding {
   padding: 4em 2em;
@@ -318,78 +323,57 @@ body {
 .footer {
   background-image: url("../img/header/ciemne_header.jpg");
   background-size: cover;
+  height: 100%;
 }
 .footer-down {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid black;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
-  padding: 0.5em;
+  padding-top: 1em;
 }
 .footer-up {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   height: auto;
 }
-.footer-up h4 {
-  font-size: 3rem;
-}
-.footer-up-left {
-  padding: 1em 0;
-}
-.footer-up-right {
-  padding: 1em 0;
-}
-.footer__color {
-  color: #a612c7;
-  font-weight: bold;
-}
-.footer .display {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.footer .phone-number {
-  display: flex;
-  align-content: space-around;
-  font-weight: bold;
-  padding: 0.5em 1em;
-}
-.footer .phone-number-number {
-  padding: 0 1em;
-}
-.footer .phone-number-text {
-  display: flex;
-  flex-direction: column;
-}
-.footer .email-adress {
-  display: flex;
-  align-content: space-around;
-  font-weight: bold;
-  padding: 0.5em 1em;
-}
-.footer .email-adress-number {
-  padding: 0 1em;
-}
-.footer .follow-facebook {
-  margin-bottom: 1em;
-  padding-left: 1em;
-}
-.footer .follow-facebook img {
+.footer-left {
   width: 50%;
+  padding: 2em;
 }
-.footer .adress {
+.footer-left-nav {
   display: flex;
-  flex-direction: column;
+  bottom: 0;
+}
+.footer-left-nav-link {
+  text-decoration: none;
+  padding: 1em 0;
   font-weight: bold;
 }
-.footer .adress-text {
-  padding: 0.3em 1em;
+.footer-left-nav-link-line {
+  padding: 1em 0.5em;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  padding: 2em;
+}
+.footer-right-social {
+  display: flex;
+}
+.footer-right-social a img {
+  width: 50px;
+  height: 50px;
+}
+.footer-right .contact-data {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+.footer-right .contact-data p {
+  padding: 0.5em 0.5em;
 }
 
 @media (min-width: 992px) {
@@ -431,7 +415,7 @@ body {
     width: 40%;
   }
   .wrapper {
-    max-width: 1450px;
+    max-width: 1200px;
   }
   .aboutus {
     background-image: url("../img/aboutus/aboutus_big.jpg");
@@ -465,73 +449,14 @@ body {
   }
   .footer-down {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border-top: 1px solid black;
+    padding: 1em 0;
     width: 100%;
-    padding: 0.5em;
-  }
-  .footer-up {
-    display: flex;
-    flex-direction: row;
-    padding-top: 1em;
-    padding-left: 2em;
-    height: 230px;
-    text-align: start;
-    justify-content: start;
-    align-items: start;
-    width: 100vw;
-  }
-  .footer-up-left {
-    width: 50%;
-  }
-  .footer-up-right {
-    width: 50%;
   }
   .footer__color {
     color: #a612c7;
     font-weight: bold;
-  }
-  .footer .display {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer .phone-number {
-    display: flex;
-    align-content: space-around;
-    font-weight: bold;
-    padding: 0.5em 1em;
-  }
-  .footer .phone-number-number {
-    padding: 0 1em;
-  }
-  .footer .phone-number-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer .email-adress {
-    display: flex;
-    align-content: space-around;
-    font-weight: bold;
-    padding: 0.5em 1em;
-  }
-  .footer .email-adress-number {
-    padding: 0 1em;
-  }
-  .footer .follow-facebook {
-    margin-bottom: 1em;
-    padding-left: 1em;
-  }
-  .footer .follow-facebook img {
-    width: 50%;
-  }
-  .footer .adress {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-  }
-  .footer .adress-text {
-    padding: 0.3em 1em;
   }
 }
 @media (max-height: 725px) {

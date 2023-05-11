@@ -41,7 +41,7 @@
 		}
 	}
 	.wrapper {
-		max-width: 1450px;
+		max-width: 1200px;
 	}
 
 	.aboutus {
@@ -73,74 +73,15 @@
 		background-size: cover;
 		&-down {
 			display: flex;
-			justify-content: center;
+			justify-content: flex-start;
 			align-items: center;
-			border-top: 1px solid black;
+			padding: 1em 0;
 			width: 100%;
-			padding: 0.5em;
-		}
-		&-up {
-			display: flex;
-			flex-direction: row;
-			padding-top: 1em;
-			padding-left: 2em;
-			height: 230px;
-			text-align: start;
-			justify-content: start;
-			align-items: start;
-			width: 100vw;
-			&-left {
-				width: 50%;
-			}
-			&-right {
-				width: 50%;
-			}
+
 		}
 		&__color {
 			color: $sec-color;
 			font-weight: bold;
-		}
-		.display {
-			display: flex;
-			flex-direction: row;
-		}
-		.phone-number {
-			display: flex;
-			align-content: space-around;
-			font-weight: bold;
-			padding: 0.5em 1em;
-
-			&-number {
-				padding: 0 1em;
-			}
-			&-text {
-				display: flex;
-				flex-direction: column;
-			}
-		}
-		.email-adress {
-			display: flex;
-			align-content: space-around;
-			font-weight: bold;
-			padding: 0.5em 1em;
-			&-number {
-				padding: 0 1em;
-			}
-		}
-		.follow-facebook {
-			margin-bottom: 1em;
-			padding-left: 1em;
-			img {
-				width: 50%;
-			}
-		}
-		.adress {
-			display: flex;
-			flex-direction: column;
-			font-weight: bold;
-			&-text {
-				padding: 0.3em 1em;
-			}
 		}
 	}
 }

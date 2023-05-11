@@ -7,6 +7,11 @@
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 100%;
+	&-footer {
+		margin: 0 auto;
+		max-width: 1000px;
+		width: 100%;
+	}
 }
 .section-padding {
 	padding: 4em 2em;
@@ -258,78 +263,57 @@
 .footer {
 	background-image: url('../img/header/ciemne_header.jpg');
 	background-size: cover;
+	height: 100%;
 	&-down {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-top: 1px solid black;
+		justify-content: flex-start;
+		align-items: flex-start;
 		width: 100%;
-		padding: 0.5em;
+		padding-top: 1em;
 	}
 	&-up {
 		display: flex;
-		flex-direction: column;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
 		height: auto;
-		h4 {
-			font-size: 3rem;
-		}
-		&-left{
-			padding: 1em 0;
-		}
-		&-right {
-			padding: 1em 0;
-		}
 	}
-	&__color {
-		color: $sec-color;
-		font-weight: bold;
-	}
-	.display {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-	.phone-number {
-		display: flex;
-		align-content: space-around;
-		font-weight: bold;
-		padding: .5em 1em;
-		
-		&-number {
-			padding: 0 1em;
-		}
-		&-text {
+	&-left {
+		width: 50%;
+		padding: 2em;
+		&-nav {
 			display: flex;
-			flex-direction: column;
+			bottom: 0;
+			&-link {
+				text-decoration: none;
+				padding: 1em 0;
+				font-weight: bold;
+				&-line {
+					padding: 1em .5em;
+				}
+			}
 		}
 	}
-	.email-adress {
-		display: flex;
-		align-content: space-around;
-		font-weight: bold;
-		padding: .5em 1em;
-		&-number {
-			padding: 0 1em;
-		}
-	}
-	.follow-facebook {
-		margin-bottom: 1em;
-		padding-left: 1em;
-		img {
-			width: 50%;
-		}
-	}
-	.adress {
+	&-right {
 		display: flex;
 		flex-direction: column;
-		font-weight: bold;
-		&-text {
-			padding: .3em 1em;
-
+		justify-content: flex-end;
+		align-items: flex-end;
+		width: 50%;
+		padding: 2em;
+		&-social {
+			display: flex;
+			a {
+				img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+		.contact-data {
+			display: flex;
+			justify-content: end;
+			flex-direction: column;
+			p {
+				padding: .5em .5em;
+			}
 		}
 	}
 }
