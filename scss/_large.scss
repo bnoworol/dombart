@@ -175,4 +175,68 @@
 			font-size: 6rem;
 		}
 	}
+	.footer {
+		&__bottom {
+			&-text {
+				font-weight: 800;
+			}
+		}
+		&-down {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			width: 100%;
+			padding-top: 1em;
+		}
+		&-up {
+			display: flex;
+			height: auto;
+			flex-direction: row;
+		}
+		&-left {
+			width: 50%;
+			padding: 2em;
+			justify-content: flex-start;
+			align-items: flex-start;
+			&-nav {
+				display: flex;
+				bottom: 0;
+				&-link {
+					text-decoration: none;
+					padding: 1em 0;
+					font-weight: bold;
+					color: black;
+					&-line {
+						padding: 1em 0.5em;
+					}
+				}
+			}
+		}
+		&-right {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-end;
+			width: 50%;
+			padding: 2em;
+			text-align: end;
+			&-social {
+				display: flex;
+				a {
+					img {
+						width: 50px;
+						height: 50px;
+					}
+				}
+			}
+			.contact-data {
+				display: flex;
+				justify-content: end;
+				flex-direction: column;
+				p {
+					padding: 0.5em 0.5em;
+				}
+			}
+		}
+	}
 }

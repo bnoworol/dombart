@@ -325,10 +325,19 @@ body {
   background-size: cover;
   height: 100%;
 }
+.footer-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__bottom-text {
+  font-weight: 800;
+}
 .footer-down {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding-top: 1em;
 }
@@ -337,7 +346,10 @@ body {
   height: auto;
 }
 .footer-left {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2em;
 }
 .footer-left-nav {
@@ -348,6 +360,7 @@ body {
   text-decoration: none;
   padding: 1em 0;
   font-weight: bold;
+  color: black;
 }
 .footer-left-nav-link-line {
   padding: 1em 0.5em;
@@ -355,9 +368,9 @@ body {
 .footer-right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 2em;
 }
 .footer-right-social {
@@ -542,5 +555,63 @@ body {
   }
   .realization .section-title {
     font-size: 6rem;
+  }
+  .footer__bottom-text {
+    font-weight: 800;
+  }
+  .footer-down {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 1em;
+  }
+  .footer-up {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+  }
+  .footer-left {
+    width: 50%;
+    padding: 2em;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-left-nav {
+    display: flex;
+    bottom: 0;
+  }
+  .footer-left-nav-link {
+    text-decoration: none;
+    padding: 1em 0;
+    font-weight: bold;
+    color: black;
+  }
+  .footer-left-nav-link-line {
+    padding: 1em 0.5em;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+    padding: 2em;
+    text-align: end;
+  }
+  .footer-right-social {
+    display: flex;
+  }
+  .footer-right-social a img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-right .contact-data {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+  .footer-right .contact-data p {
+    padding: 0.5em 0.5em;
   }
 }/*# sourceMappingURL=main.css.map */
