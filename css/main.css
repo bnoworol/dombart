@@ -367,8 +367,8 @@ body {
   height: 500px;
 }
 .realization .item {
-  -webkit-animation: animate 100s linear infinite;
-          animation: animate 100s linear infinite;
+  -webkit-animation: animate 200s linear infinite;
+          animation: animate 200s linear infinite;
 }
 .realization .item img {
   min-width: 200px;
