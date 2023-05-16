@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/hamburger.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -28,7 +28,7 @@
             <div class="nav nav-desktop">
                 <a class="nav__link" href="#">Strona Główna</a>
                 <a class="nav__link" href="#offer">oferta</a>
-                <a class="nav__link" href="#contact">kontakt</a>
+                <a class="nav__link" href="contact.html">kontakt</a>
             </div>
         </div>
         <button class="hamburger hamburger--spin" type="button">
@@ -39,7 +39,7 @@
         <div class="nav nav-mobile">
             <a class="nav__link" href="#">Strona Główna</a>
             <a class="nav__link" href="#offer">oferta</a>
-            <a class="nav__link" href="#contact">kontakt</a>
+            <a class="nav__link" href="contact.html">kontakt</a>
         </div>
     </nav>
 
@@ -142,6 +142,14 @@
         </section>
     </main>
 
+
+    <a href="javascript:scroll(0,0);">
+        <div class="go-up">
+            <img src="./img/icon/arrow-up.svg" alt="">
+        </div>
+    </a>
+
+
     <footer class="footer">
         <div class="wrapper-footer">
             <div class="footer-up">
@@ -180,6 +188,13 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        const arrow = document.querySelector('.header__arrow')
+        const html = document.querySelector('html')
+        arrow.addEventListener('click', () => {
+            html.style.scrollPaddingTop = '140' + 'px'
+        })
+    </script>
 </body>
 
 </html>

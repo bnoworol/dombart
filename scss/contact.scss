@@ -31,6 +31,7 @@
 	text-shadow: -2px 0 $main-color, 0 2px $main-color, 2px 0 $main-color, 0 -2px $main-color;
 	color: $white;
 }
+
 .nav__logo {
 	position: relative;
 	top: 1rem;
@@ -142,12 +143,12 @@
 	position: relative;
 	top: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 40vh;
 	background-image: url('../img/header/jasne_header.jpg');
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
-
+	transition: 0.5s;
 	&__hero-shadow {
 		position: absolute;
 		top: 0;
@@ -161,10 +162,12 @@
 		position: relative;
 		text-align: center;
 		font-size: 6rem;
-		padding-top: 3.5em;
-		color: $white;
+		padding-top: 2em;
+		text-transform: uppercase;
+		color: $main-color;
 		text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 		margin-bottom: 1em;
+		letter-spacing: 10px;
 		z-index: 2;
 	}
 	&__text {
@@ -186,87 +189,11 @@
 			padding-bottom: 3rem;
 		}
 	}
-	&__arrow {
-		display: none;
-	}
 	&__logo {
-		width: 60%;
-	}
-}
-// MAIN
-// aboutus
-
-.aboutus {
-	background-image: url('../img/aboutus/aboutus_small.jpg');
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
-	height: auto;
-	padding-bottom: 3rem;
-	&__boxes {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		margin-bottom: 32px 0;
-	}
-	&__box {
-		margin-bottom: 2em;
-		box-shadow: 2px 2px 18px 5px rgba(255, 255, 255, 1) inset;
-		background-color: rgba(255, 255, 255, 0.6);
-		max-width: 80%;
-		height: auto;
-	}
-	&__title {
-		color: $main-color;
-		font-size: 3rem;
-		text-align: center;
-		margin: 2rem auto;
-	}
-	&__text {
-		font-size: 1.7rem;
-		margin: 1rem;
-		padding-bottom: 1.5em;
-		color: $main-color;
-		font-weight: 400;
-		text-align: center;
-		&-size {
-			font-weight: bold;
-		}
+		width: 50%;
 	}
 }
 
-// REALIZACJE
-
-.realization {
-	height: auto;
-	.section-title {
-		font-size: 4rem;
-	}
-	img {
-		width: 500px;
-		height: 400px;
-	}
-	.slider {
-		display: flex;
-		width: 60%;
-		margin: 0 auto;
-		overflow: hidden;
-		padding: 2.5rem;
-		height: 500px;
-	}
-	.item {
-		animation: animate 60s linear infinite;
-	}
-	.item img {
-		min-width: 200px;
-		padding: 0 30px;
-	}
-	.slider:hover .item {
-		animation-play-state: paused;
-	}
-}
-// footer
 .footer {
 	background-image: url('../img/header/ciemne_header.jpg');
 	background-size: cover;
@@ -342,114 +269,121 @@
 	}
 }
 
-.go-up {
-	visibility: hidden;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	z-index: 5;
-	background-color: #fff;
-	border-radius: 50%;
-	transition: 0.5s;
-	cursor: pointer;
-	img {
-		width: 50px;
-	}
-	&:hover {
-		background-color: $main-color;
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&-btn {
+		position: relative;
+		padding: 0.5em 0.5em;
+		color: $darker;
+		text-decoration: none;
+		transition: color 0.3s;
+		border: 1px solid transparent;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 3em;
+		font-size: 3.6rem;
+		cursor: pointer;
+		&:hover {
+			color: $text;
+		}
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: '';
+			width: 100%;
+			height: 100%;
+			border: 1px solid $sec-color;
+			opacity: 0;
+		}
+		&:hover::before {
+			animation: pulse 1s;
+		}
 	}
 }
 
-// CONTACT
-// CONTACT HEADER
-// .contact {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	&-btn {
-// 		position: relative;
-// 		padding: 0.5em 0.5em;
-// 		color: $darker;
-// 		text-decoration: none;
-// 		transition: color 0.3s;
-// 		border: 1px solid transparent;
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 		margin: 3em;
-// 		font-size: 3.6rem;
-// 		&:hover {
-// 			color: $text;
-// 		}
-// 		&::before {
-// 			position: absolute;
-// 			top: 0;
-// 			left: 0;
-// 			content: '';
-// 			width: 100%;
-// 			height: 100%;
-// 			border: 1px solid $sec-color;
-// 			opacity: 0;
-// 		}
-// 		&:hover::before {
-// 			animation: pulse 1s;
-// 		}
-// 	}
-// }
+// //////////////////////
+.container {
+	.content {
+		.left-side {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			.details {
+				margin: 14px;
+				text-align: center;
+				img {
+					margin-bottom: 10px;
+					width: 25%;
+				}
+				.topic {
+					font-size: 2.4rem;
+				}
+				.text-one,
+				.text-two {
+					font-size: 2rem;
+					color: $main-color;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+// /////////////////////
 
 // CONTACT SECTION
 /* Split the screen into thirds*/
-// .split {
-//     height: 450px;
-//     width: 50%;
-//     z-index: 1;
-//     top: 0;
-//     overflow-x: hidden;
-//     // padding: 0 20px;
-// 	margin: 20px;
-// }
+.contact {
+	display: flex;
+	flex-direction: column-reverse;
+}
+.split {
+	height: 450px;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+}
 
-/* Control the left side */
-// .left {
-// 	overflow: hidden;
-//     left: 0;
-//     background-color: #111;
-// 	iframe {
-// 		width: 100%;
-// 		height: 450px;
-// 	}
-// }
 
-/* Control the right side */
-// .right {
-//     right: 0;
-//     background-color: #333;
-// }
+.left {
+	animation: left 1s 1s forwards;
+	overflow: hidden;
+	background-color: #111;
+	transform: translateX(-100%);
+	iframe {
+		width: 100%;
+		height: 450px;
+	}
+}
 
-// .center {
-//     right:auto;
-//     left:auto;
-//     background-color:wheat;
-// }
 
-/* If you want the content centered horizontally and vertically */
-// .centered {
-//     position: relative;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     text-align: center;
-// 	color: #fff;
-// }
+.right {
+	animation: right 1s forwards;
+	overflow: hidden;
+	background-image: url('../img/header/contact-hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: translateX(100%);
 
-    /* Style the image inside the centered container, if needed */
-    // .centered img {
-    //     width: 150px;
-    //     border-radius: 50%;
-    // }
+}
 
-	
 
-@import './large';
+.centered {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+@import './largeContact';
 @import './medium';
 @import './small';

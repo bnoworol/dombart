@@ -20,6 +20,33 @@
 	}
 }
 
+@keyframes header {
+	from {
+		height: 100vh;
+	} to {
+		height: 40vh;
+	}
+}
+
+@keyframes left {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes right {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+
+
 // .swiper {
 // 	width: 700px;
 // 	height: 500px;
