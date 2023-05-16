@@ -346,7 +346,7 @@
 	flex-direction: column-reverse;
 }
 .split {
-	height: 450px;
+	height: 500px;
 	width: 100%;
 	z-index: 1;
 	top: 0;
@@ -360,11 +360,12 @@
 	transform: translateX(-100%);
 	iframe {
 		width: 100%;
-		height: 450px;
+		height: 500px;
 	}
 }
 
 .right {
+	// height: auto;
 	animation: right 1s forwards;
 	overflow: hidden;
 	box-shadow: 2px 2px 18px 5px rgba(0, 0, 0, 0.5) inset;

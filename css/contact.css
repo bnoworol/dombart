@@ -446,7 +446,7 @@ body {
 }
 
 .split {
-  height: 450px;
+  height: 500px;
   width: 100%;
   z-index: 1;
   top: 0;
@@ -462,7 +462,7 @@ body {
 }
 .left iframe {
   width: 100%;
-  height: 450px;
+  height: 500px;
 }
 
 .right {
@@ -541,9 +541,6 @@ body {
     margin: 40px 0;
     height: 100%;
   }
-  .container .content {
-    flex-direction: column-reverse;
-  }
   .container .content .left-side {
     width: 100%;
     flex-direction: row;
@@ -553,6 +550,9 @@ body {
   }
   .container .content .left-side .details img {
     width: 80px;
+  }
+  .container .content .left-side .address {
+    width: 100%;
   }
   .contact {
     flex-direction: row;

@@ -59,7 +59,8 @@
 		margin: 40px 0;
 		height: 100%;
 		.content {
-			flex-direction: column-reverse;
+			// flex-direction: column-reverse;
+			// flex-direction: column;
 			.left-side {
 				width: 100%;
 				flex-direction: row;
@@ -71,6 +72,9 @@
 						width: 80px;
 					}
 				}
+				.address {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -81,7 +85,6 @@
 	.right {
 		animation: right 1s 1s forwards;
 	}
-
 }
 @media (min-height: 725px) {
 	.header {
