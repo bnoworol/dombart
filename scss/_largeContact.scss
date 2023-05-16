@@ -85,6 +85,15 @@
 	.right {
 		animation: right 1s 1s forwards;
 	}
+	.split {
+		height: 450px;
+	}
+	
+	.left {
+		iframe {
+			height: 450px;
+		}
+	}
 }
 @media (min-height: 725px) {
 	.header {
