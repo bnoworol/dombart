@@ -4,7 +4,7 @@
 		opacity: 0.5;
 	}
 	to {
-		transform: scale(1.4);
+		transform: scale(1.2);
 		opacity: 0;
 	}
 }
@@ -16,7 +16,8 @@
 		transform: translate3d(0, 0, 0);
 	}
 	100% {
-		transform: translate3d(-1800px, 0, 0);
+		// transform: translate3d(-1800px, 0, 0);
+		transform: translate3d(-15000px, 0, 0);
 	}
 }
 

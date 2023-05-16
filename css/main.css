@@ -37,7 +37,7 @@ body {
     opacity: 0.5;
   }
   to {
-    transform: scale(1.4);
+    transform: scale(1.2);
     opacity: 0;
   }
 }
@@ -48,7 +48,7 @@ body {
     opacity: 0.5;
   }
   to {
-    transform: scale(1.4);
+    transform: scale(1.2);
     opacity: 0;
   }
 }
@@ -57,7 +57,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-1800px, 0, 0);
+    transform: translate3d(-15000px, 0, 0);
   }
 }
 @keyframes animate {
@@ -65,7 +65,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-1800px, 0, 0);
+    transform: translate3d(-15000px, 0, 0);
   }
 }
 @-webkit-keyframes header {
@@ -353,6 +353,7 @@ body {
   font-size: 4rem;
 }
 .realization img {
+  background-size: cover;
   width: 500px;
   height: 400px;
 }
@@ -365,8 +366,8 @@ body {
   height: 500px;
 }
 .realization .item {
-  -webkit-animation: animate 60s linear infinite;
-          animation: animate 60s linear infinite;
+  -webkit-animation: animate 80s linear infinite;
+          animation: animate 80s linear infinite;
 }
 .realization .item img {
   min-width: 200px;
@@ -607,11 +608,13 @@ body {
     top: 0.6em;
     right: 0;
     z-index: 500;
-    overflow: hidden;
   }
   .nav__link {
     color: #000000;
     border: 1px solid transparent;
+  }
+  .nav__link:hover {
+    color: #6a197d;
   }
   .nav__link::before {
     position: absolute;

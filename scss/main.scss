@@ -244,6 +244,7 @@
 		font-size: 4rem;
 	}
 	img {
+		background-size: cover;
 		width: 500px;
 		height: 400px;
 	}
@@ -256,7 +257,7 @@
 		height: 500px;
 	}
 	.item {
-		animation: animate 60s linear infinite;
+		animation: animate 80s linear infinite;
 	}
 	.item img {
 		min-width: 200px;

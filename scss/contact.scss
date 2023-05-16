@@ -316,6 +316,7 @@
 			align-items: center;
 			justify-content: center;
 			position: relative;
+
 			.details {
 				margin: 14px;
 				text-align: center;
@@ -352,7 +353,6 @@
 	overflow-x: hidden;
 }
 
-
 .left {
 	animation: left 1s 1s forwards;
 	overflow: hidden;
@@ -364,17 +364,12 @@
 	}
 }
 
-
 .right {
 	animation: right 1s forwards;
 	overflow: hidden;
-	background-image: url('../img/header/contact-hero.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	box-shadow: 2px 2px 18px 5px rgba(0, 0, 0, 0.5) inset;
 	transform: translateX(100%);
-
 }
-
 
 .centered {
 	position: relative;
