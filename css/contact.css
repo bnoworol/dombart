@@ -116,6 +116,84 @@ body {
     transform: translateX(0);
   }
 }
+@-webkit-keyframes up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    transform: translateY(0);
+    z-index: -1;
+  }
+  50% {
+    transform: translateY(60%);
+    z-index: -1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(0);
+    z-index: -1;
+  }
+  50% {
+    transform: translateY(60%);
+    z-index: -1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #6a197d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6a197d;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -151,6 +229,13 @@ body {
 }
 
 .nav__logo {
+  position: relative;
+  top: 1rem;
+  left: 3rem;
+  width: 150px;
+}
+
+.nav__logo-offers {
   position: relative;
   top: 1rem;
   left: 3rem;
@@ -481,6 +566,24 @@ body {
   text-align: center;
 }
 
+.go-up {
+  visibility: hidden;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.go-up img {
+  width: 50px;
+}
+.go-up:hover {
+  background-color: #6a197d;
+}
+
 @media (min-width: 992px) {
   .section-padding {
     padding: 2em 2em;
@@ -594,6 +697,10 @@ body {
   }
 }
 @media (min-width: 1050px) {
+  .nav__logo-offers {
+    padding-top: 10px;
+    position: static;
+  }
   .nav__logo {
     padding-top: 10px;
     position: static;

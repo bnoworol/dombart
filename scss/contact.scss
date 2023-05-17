@@ -3,6 +3,28 @@
 @use './mixin' as *;
 @use './animation' as *;
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #6a197d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #6a197d;
+	border-radius: 15px;
+	border: 2px solid #ffffff;
+}
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -33,6 +55,12 @@
 }
 
 .nav__logo {
+	position: relative;
+	top: 1rem;
+	left: 3rem;
+	width: 150px;
+}
+.nav__logo-offers {
 	position: relative;
 	top: 1rem;
 	left: 3rem;
@@ -378,6 +406,24 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+.go-up {
+	visibility: hidden;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 5;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: 0.5s;
+	cursor: pointer;
+	img {
+		width: 50px;
+	}
+	&:hover {
+		background-color: $main-color;
+	}
 }
 
 @import './largeContact';

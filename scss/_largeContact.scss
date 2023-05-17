@@ -125,6 +125,10 @@
 
 @media (min-width: 1050px) {
 	.nav {
+		&__logo-offers {
+			padding-top: 10px;
+			position: static;
+		}
 		&__logo {
 			padding-top: 10px;
 			position: static;

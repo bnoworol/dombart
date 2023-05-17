@@ -116,6 +116,84 @@ body {
     transform: translateX(0);
   }
 }
+@-webkit-keyframes up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    transform: translateY(0);
+    z-index: -1;
+  }
+  50% {
+    transform: translateY(60%);
+    z-index: -1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(0);
+    z-index: -1;
+  }
+  50% {
+    transform: translateY(60%);
+    z-index: -1;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #6a197d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6a197d;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -466,11 +544,6 @@ body {
   background-color: #6a197d;
 }
 
-/* Split the screen into thirds*/
-/* Control the left side */
-/* Control the right side */
-/* If you want the content centered horizontally and vertically */
-/* Style the image inside the centered container, if needed */
 @media (min-width: 992px) {
   .section-padding {
     padding: 2em 2em;

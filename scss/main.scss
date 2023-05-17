@@ -3,6 +3,28 @@
 @use './mixin' as *;
 @use './animation' as *;
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #6a197d #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #6a197d;
+	border-radius: 15px;
+	border: 2px solid #ffffff;
+}
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -361,96 +383,6 @@
 		background-color: $main-color;
 	}
 }
-
-// CONTACT
-// CONTACT HEADER
-// .contact {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	&-btn {
-// 		position: relative;
-// 		padding: 0.5em 0.5em;
-// 		color: $darker;
-// 		text-decoration: none;
-// 		transition: color 0.3s;
-// 		border: 1px solid transparent;
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 		margin: 3em;
-// 		font-size: 3.6rem;
-// 		&:hover {
-// 			color: $text;
-// 		}
-// 		&::before {
-// 			position: absolute;
-// 			top: 0;
-// 			left: 0;
-// 			content: '';
-// 			width: 100%;
-// 			height: 100%;
-// 			border: 1px solid $sec-color;
-// 			opacity: 0;
-// 		}
-// 		&:hover::before {
-// 			animation: pulse 1s;
-// 		}
-// 	}
-// }
-
-// CONTACT SECTION
-/* Split the screen into thirds*/
-// .split {
-//     height: 450px;
-//     width: 50%;
-//     z-index: 1;
-//     top: 0;
-//     overflow-x: hidden;
-//     // padding: 0 20px;
-// 	margin: 20px;
-// }
-
-/* Control the left side */
-// .left {
-// 	overflow: hidden;
-//     left: 0;
-//     background-color: #111;
-// 	iframe {
-// 		width: 100%;
-// 		height: 450px;
-// 	}
-// }
-
-/* Control the right side */
-// .right {
-//     right: 0;
-//     background-color: #333;
-// }
-
-// .center {
-//     right:auto;
-//     left:auto;
-//     background-color:wheat;
-// }
-
-/* If you want the content centered horizontally and vertically */
-// .centered {
-//     position: relative;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     text-align: center;
-// 	color: #fff;
-// }
-
-    /* Style the image inside the centered container, if needed */
-    // .centered img {
-    //     width: 150px;
-    //     border-radius: 50%;
-    // }
-
-	
 
 @import './large';
 @import './medium';
