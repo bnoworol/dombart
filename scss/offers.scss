@@ -107,7 +107,7 @@
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 		overflow: hidden;
 	}
-// KOSZULKI i BLUZY
+	// KOSZULKI i BLUZY
 	.one {
 		background-image: url('../img/realization/3.jpg');
 	}
@@ -145,7 +145,7 @@
 	.twelve {
 		background-image: url('../img/realization/6.jpg');
 	}
-		// NASTĘPNA SEKCJA - PODZIĘKOWANIA
+	// NASTĘPNA SEKCJA - PODZIĘKOWANIA
 	.thirteen {
 		background-image: url('../img/realization/8.jpg');
 	}
@@ -231,6 +231,80 @@
 	h2 {
 		margin-bottom: 30px;
 		color: rgb(141, 138, 138);
+	}
+}
+
+ul {
+	list-style: none;
+	font-size: 24px;
+}
+
+.menu-item {
+	list-style: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+	background-color: transparent;
+	.dropdown {
+		li {
+			display: block;
+			animation: menu1 0.5s forwards;
+		}
+		li:nth-child(2) {
+			animation-delay: 0.2s;
+		}
+		li:nth-child(3) {
+			animation-delay: 0.4s;
+		}
+		li:nth-child(4) {
+			animation-delay: 0.6s;
+		}
+		li:nth-child(5) {
+			animation-delay: 0.8s;
+		}
+		li:nth-child(6) {
+			animation-delay: 1s;
+		}
+	}
+}
+
+.dropdown {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	// width: 300px;
+	li {
+		display: none;
+		background-color: transparent;
+		background-color: rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		transition: color 0.3s;
+		font-size: 20px;
+		// border: 1px solid black;
+		padding: 10px;
+		a {
+			text-decoration: none;
+			color: $darker;
+			// border: 1px solid black;
+			// padding: 0 15px;
+		}
+	}
+	li:hover {
+		color: royalblue;
+	}
+}
+
+@keyframes menu1 {
+	from {
+		opacity: 0;
+		transform: translateY(60px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 
