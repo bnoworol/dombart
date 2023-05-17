@@ -6,7 +6,7 @@ const allNavItemsClose = document.querySelectorAll('.nav')
 const footerYear = document.querySelector('.footer__year')
 const navDesktop = document.querySelector('.nav__color-logo')
 const arrowUp = document.querySelector('.go-up')
-const logo = document.querySelector('.nav__logo')
+const dropdownLinks = document.querySelectorAll('.dropdown__link')
 
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
@@ -29,18 +29,23 @@ const handleNav = () => {
 	})
 }
 
-
 function addedBackground() {
 	const navbarY = window.pageYOffset
 	if (navbarY >= 200) {
 		navDesktop.style.backgroundColor = '#f5f5f5'
 		arrowUp.style.visibility = 'visible'
-		logo.style.visibility = 'visible'
 	} else {
 		navDesktop.style.backgroundColor = 'transparent'
 		arrowUp.style.visibility = 'hidden'
-		logo.style.visibility = 'hidden'
 	}
+	const item = dropdownLinks.forEach(el => {
+		if (navbarY >= 200) {
+			el.style.backgroundColor = '#f5f5f5'
+		}
+		else if (navbarY <= 200) {
+			el.style.backgroundColor = '#0000001a'
+		}
+	})
 }
 
 ;[navBtn, allNavItemsClose].map(allNavItemsClose => navBtn.addEventListener('click', handleNav))
@@ -51,4 +56,3 @@ function handleCurrentYear() {
 }
 handleCurrentYear()
 document.addEventListener('scroll', addedBackground)
-

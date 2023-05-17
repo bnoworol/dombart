@@ -306,7 +306,7 @@ body {
   transition: color 0.3s;
 }
 .nav__link:hover {
-  color: #D2266F;
+  color: #d2266f;
 }
 
 .nav__socialmedia {
@@ -480,7 +480,7 @@ body {
   cursor: pointer;
 }
 .contact-btn:hover {
-  color: #D2266F;
+  color: #d2266f;
 }
 .contact-btn::before {
   position: absolute;

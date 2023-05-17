@@ -212,6 +212,17 @@
         arrow.addEventListener('click', () => {
             html.style.scrollPaddingTop = '140' + 'px'
         })
+        const logo = document.querySelector('.nav__logo')
+        function addedLogo() {
+            const navbarY = window.pageYOffset
+            if (navbarY >= 200) {
+                logo.style.visibility = 'visible'
+
+            } else {
+                logo.style.visibility = 'hidden'
+            }
+        }
+        document.addEventListener('scroll', addedLogo)
     </script>
 </body>
 
