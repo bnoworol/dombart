@@ -1,89 +1,6 @@
 @use './colors' as *;
 @use './reset' as *;
-@use './mixin' as *;
 @use './animation' as *;
-
-// .first-box {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	flex-wrap: wrap;
-// 	background: radial-gradient(circle, rgba(159, 47, 96, 1) 0%, rgba(115, 120, 126, 1) 100%);
-// 	overflow: hidden;
-// 	width: 100vw;
-// 	border-bottom: 10px solid black;
-// 	.card {
-// 		position: relative;
-// 		margin: 20px 30px;
-// 		width: 300px;
-// 		height: 300px;
-// 		perspective: 800px;
-// 	}
-// 	.img {
-// 		width: 100%;
-// 		height: 100%;
-// 		background-position: center;
-// 		background-size: cover;
-// 		border-radius: 15px;
-// 		transition: 0.8s;
-// 	}
-
-// 	.one {
-// 		background-image: url('../img/realization/1.jpg');
-// 	}
-// 	.two {
-// 		background-image: url('../img/realization/2.jpg');
-// 	}
-// 	.three {
-// 		background-image: url('../img/realization/3.jpg');
-// 	}
-// 	.four {
-// 		background-image: url('../img/realization/4.jpg');
-// 	}
-// 	.five {
-// 		background-image: url('../img/realization/5.jpg');
-// 	}
-// 	.six {
-// 		background-image: url('../img/realization/6.jpg');
-// 	}
-// 	.seven {
-// 		background-image: url('../img/realization/7.jpg');
-// 	}
-
-// 	.text {
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		bottom: 0;
-// 		right: 0;
-// 		height: 300px;
-// 		padding: 10px;
-// 		border-radius: 1.5rem;
-// 		text-align: center;
-// 		background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
-// 		opacity: 0;
-// 		transition: 0.8s;
-// 		font-size: 1.6rem;
-// 	}
-
-// 	h3 {
-// 		margin-top: 10px;
-// 		margin-bottom: 20px;
-// 	}
-
-// 	.text-one {
-// 		transform: rotateX(-180deg);
-// 	}
-
-// 	.card:hover .text {
-// 		transform: rotate(0);
-// 		opacity: 1;
-// 	}
-// 	.card:hover .one {
-// 		transform: rotateX(180deg);
-// 		opacity: 0;
-// 	}
-// }
 
 .second-box {
 	background: radial-gradient(circle, rgba(159, 47, 96, 1) 0%, rgba(115, 120, 126, 1) 100%);
@@ -97,8 +14,8 @@
 	.card {
 		position: relative;
 		margin: 10px;
-		height: 300px;
-		width: 300px;
+		height: 250px;
+		width: 250px;
 		text-align: center;
 		background-position: center;
 		background-size: cover;
@@ -114,116 +31,42 @@
 			height: 100%;
 			background: none;
 			border: none;
-			color: #fff;
-			cursor: crosshair;
+			color: transparent;
+			cursor: pointer;
 			z-index: 1;
 		}
-		button:hover ~ .text {
+		a:hover ~ .text {
 			clip-path: circle(120% at 50% 90%);
 		}
-	}
-	.t-shirt {
-		height: 0;
-	}
-	.awards {
-		height: 0;
-	}
-	.thanks {
-		height: 0;
-	}
-	.cups {
-		height: 0;
-	}
-	.another {
-		height: 0;
+		.show {
+			color: $white;
+			border: 2px solid $white;
+			width: 80%;
+			height: 20%;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 	// KOSZULKI i BLUZY
 	.one {
-		background-image: url('../img/realization/3.jpg');
+		background-image: url('../img/realization/31.webp');
 	}
 	.two {
-		background-image: url('../img/realization/13.jpg');
+		background-image: url('../img/realization/15.webp');
 	}
 	.three {
-		background-image: url('../img/realization/16.jpg');
+		background-image: url('../img/realization/10.webp');
 	}
 	.four {
-		background-image: url('../img/realization/21.jpg');
+		background-image: url('../img/realization/22.webp');
 	}
 	.five {
-		background-image: url('../img/realization/29.jpg');
+		background-image: url('../img/realization/24.webp');
 	}
 	.six {
-		background-image: url('../img/realization/26.jpg');
+		background-image: url('../img/realization/26.webp');
 	}
-	.seven {
-		background-image: url('../img/realization/27.jpg');
-	}
-	.eight {
-		background-image: url('../img/realization/31.jpg');
-	}
-	// NASTEPNA CZĘŚĆ - NAGRODY
-	.nine {
-		background-image: url('../img/realization/15.jpg');
-	}
-	.ten {
-		background-image: url('../img/realization/9.jpg');
-	}
-	.eleven {
-		background-image: url('../img/realization/18.jpg');
-	}
-	.twelve {
-		background-image: url('../img/realization/6.jpg');
-	}
-	// NASTĘPNA SEKCJA - PODZIĘKOWANIA
-	.thirteen {
-		background-image: url('../img/realization/8.jpg');
-	}
-	.fourteen {
-		background-image: url('../img/realization/10.jpg');
-	}
-	.fifteen {
-		background-image: url('../img/realization/14.jpg');
-	}
-	.sixteen {
-		background-image: url('../img/realization/12.jpg');
-	}
-	.seventeen {
-		background-image: url('../img/realization/24.jpg');
-	}
-	.eighteen {
-		background-image: url('../img/realization/23.jpg');
-	}
-	// NASTĘPNA SEKCJA - KUBKI
-	.nineteen {
-		background-image: url('../img/realization/25.jpg');
-	}
-	.twenty {
-		background-image: url('../img/realization/20.jpg');
-	}
-	.twenty-one {
-		background-image: url('../img/realization/22.jpg');
-	}
-	// NASTĘPNA SEKCJA - INNE
-	.twenty-two {
-		background-image: url('../img/realization/7.jpg');
-	}
-	.twenty-three {
-		background-image: url('../img/realization/11.jpg');
-	}
-	.twenty-four {
-		background-image: url('../img/realization/17.jpg');
-	}
-	.twenty-five {
-		background-image: url('../img/realization/19.jpg');
-	}
-	.twenty-six {
-		background-image: url('../img/realization/28.jpg');
-	}
-	.twenty-seven {
-		background-image: url('../img/realization/30.jpg');
-	}
-
 	.text {
 		display: flex;
 		flex-direction: column;
@@ -239,89 +82,14 @@
 		clip-path: circle(0 at 50% 90%);
 		transition: 0.8s;
 	}
-
-	h1 {
+	h2 {
+		margin-bottom: 100px;
 		color: rgb(182, 179, 97);
 	}
-	h2 {
-		margin-bottom: 30px;
-		color: rgb(141, 138, 138);
-	}
 }
 
-ul {
-	list-style: none;
-	font-size: 24px;
-}
 
-.menu-item {
-	list-style: none;
-	cursor: pointer;
-	transition: background-color 0.3s;
-}
 
-.menu-item:hover {
-	background-color: transparent;
-	.dropdown {
-		li {
-			display: block;
-			animation: menu1 0.5s forwards;
-		}
-		li:nth-child(2) {
-			animation-delay: 0.2s;
-		}
-		li:nth-child(3) {
-			animation-delay: 0.4s;
-		}
-		li:nth-child(4) {
-			animation-delay: 0.6s;
-		}
-		li:nth-child(5) {
-			animation-delay: 0.8s;
-		}
-		li:nth-child(6) {
-			animation-delay: 1s;
-		}
-	}
-}
-
-.dropdown {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	// width: 300px;
-	li {
-		display: none;
-		background-color: transparent;
-		background-color: rgba(0, 0, 0, 0.1);
-		opacity: 0;
-		transition: color 0.3s;
-		font-size: 20px;
-		// border: 1px solid black;
-		padding: 10px;
-		a {
-			text-decoration: none;
-			color: $darker;
-			// border: 1px solid black;
-			// padding: 0 15px;
-		}
-	}
-	li:hover {
-		color: royalblue;
-	}
-}
-
-@keyframes menu1 {
-	from {
-		opacity: 0;
-		transform: translateY(60px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
 
 .title {
 	display: flex;
@@ -343,3 +111,4 @@ ul {
 	}
 }
 @import './_largeOffers.scss';
+@import './nav';

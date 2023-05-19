@@ -1,6 +1,5 @@
 @use './colors' as *;
 @use './reset' as *;
-@use './mixin' as *;
 @use './animation' as *;
 
 /* ===== Scrollbar CSS ===== */
@@ -193,7 +192,6 @@
 		padding-top: 2em;
 		text-transform: uppercase;
 		color: $main-color;
-		text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 		margin-bottom: 1em;
 		letter-spacing: 10px;
 		z-index: 2;
@@ -425,7 +423,6 @@
 		background-color: $main-color;
 	}
 }
-
+@import './nav';
 @import './largeContact';
-@import './medium';
-@import './small';
+@import './hamburger'

@@ -1,7 +1,7 @@
 @use './colors' as *;
 @use './reset' as *;
-@use './mixin' as *;
 @use './animation' as *;
+
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
@@ -384,6 +384,8 @@
 	}
 }
 
+@import './nav';
 @import './large';
-@import './medium';
-@import './small';
+// @import './medium';
+// @import './small';
+@import './hamburger';

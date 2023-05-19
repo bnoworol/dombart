@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6a197d" />
     <meta name="description"
         content="Gadżety reklamowe w Świdnicy. Tu znajdziesz koszulki z nadrukiem, kubki, pieczątki, przypinki i wiele więcej...">
     <meta name="keywords"
@@ -15,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/hamburger.css">
+    <!-- <link rel="stylesheet" href="./css/hamburger.css"> -->
     <link rel="stylesheet" href="./css/contact.css">
 </head>
 
@@ -26,11 +27,22 @@
             <a href="index.html"><img src="./img/logo/logo_tiff_png.png" alt="Logo firmy dombart" class="nav__logo"></a>
             <div class="nav nav-desktop">
                 <a class="nav__link" href="index.html">Strona Główna</a>
-                <a class="nav__link" href="offers.html">oferta</a>
+                <div>
+                    <li class="menu-item">
+                        <a class="nav__link" href="offers.html">Oferta</a>
+                        <ul class="dropdown">
+                            <li class="dropdown__link"><a href="koszulki.html">Koszulki</a></li>
+                            <li class="dropdown__link"><a href="nagrody.html">Nagrody</a></li>
+                            <li class="dropdown__link"><a href="podziekowania.html">Podziękowania</a></li>
+                            <li class="dropdown__link"><a href="kubki.html">Kubki</a></li>
+                            <li class="dropdown__link"><a href="rozne.html">Różne</a></li>
+                        </ul>
+                    </li>
+                </div>
                 <a class="nav__link" href="#">kontakt</a>
             </div>
         </div>
-        <button class="hamburger hamburger--spin" type="button">
+        <button alt="menuButton" name="menuButton" class="hamburger hamburger--spin" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
@@ -60,43 +72,43 @@
 
     <!-- MAIN -->
     <main>
-            <section class="contact">
-                <div class="split left">
-                    <div class="centered">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.591190777059!2d16.478769522836426!3d50.83873579698752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e4d2f1918f93f%3A0x1481a3dad3821720!2sDombArt!5e0!3m2!1spl!2spl!4v1683802411958!5m2!1spl!2spl"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+        <section class="contact">
+            <div class="split left">
+                <div class="centered">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.591190777059!2d16.478769522836426!3d50.83873579698752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e4d2f1918f93f%3A0x1481a3dad3821720!2sDombArt!5e0!3m2!1spl!2spl!4v1683802411958!5m2!1spl!2spl"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="googleMaps"></iframe>
                 </div>
-                <div class="split right">
-                    <div class="centered">
-                        <div class="container">
-                            <div class="content">
-                                <div class="left-side">
-                                    <div class="phone details">
-                                        <img class="contact-ikon" src="./img/icon/smartphone.svg" alt="ikona telefonu">
-                                        <div class="topic">Telefon</div>
-                                        <div class="text-one">+48 693 041 731</div>
-                                    </div>
-                                    <div class="email details">
-                                        <img class="details-ikon" src="./img/icon/mail.svg" alt="Ikona adresu e-mail">
-                                        <div class="topic">Email</div>
-                                        <div class="text-one">kontakt@dombart.eu</div>
-                                    </div>
-                                    <div class="address details">
-                                        <img class="contact-ikon" src="./img/icon/pin.svg" alt="Ikona adresu">
-                                        <div class="topic">Adres</div>
-                                        <div class="text-one">Wałbrzyska 10</div>
-                                        <div class="text-two">58-100, Świdnica</div>
-                                        <div class="text-two">Wjazd od ul.Armii Krajowej</div>
-                                    </div>
+            </div>
+            <div class="split right">
+                <div class="centered">
+                    <div class="container">
+                        <div class="content">
+                            <div class="left-side">
+                                <div class="phone details">
+                                    <img class="contact-ikon" src="./img/icon/smartphone.svg" alt="ikona telefonu">
+                                    <div class="topic">Telefon</div>
+                                    <div class="text-one">+48 693 041 731</div>
+                                </div>
+                                <div class="email details">
+                                    <img class="details-ikon" src="./img/icon/mail.svg" alt="Ikona adresu e-mail">
+                                    <div class="topic">Email</div>
+                                    <div class="text-one">kontakt@dombart.eu</div>
+                                </div>
+                                <div class="address details">
+                                    <img class="contact-ikon" src="./img/icon/pin.svg" alt="Ikona adresu">
+                                    <div class="topic">Adres</div>
+                                    <div class="text-one">Wałbrzyska 10</div>
+                                    <div class="text-two">58-100, Świdnica</div>
+                                    <div class="text-two">Wjazd od ul.Armii Krajowej</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -104,9 +116,9 @@
             <div class="footer-up">
                 <div class="footer-left">
                     <nav class="footer-left-nav">
-                        <a class="footer-left-nav-link" href="">Oferta </a>
+                        <a class="footer-left-nav-link" href="offers.html">Oferta </a>
                         <span class="footer-left-nav-link-line">|</span>
-                        <a class="footer-left-nav-link" href="">Kontakt</a>
+                        <a class="footer-left-nav-link" href="contact.html">Kontakt</a>
                     </nav>
                     <a class="footer-left-nav-link" href="https://goo.gl/maps/euN5n74NNJiUUJtM7" target="_blank">Biuro
                         Świdnica</a>
