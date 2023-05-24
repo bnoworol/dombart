@@ -731,6 +731,38 @@ ul {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
+.menu-item:hover .dropdown li:nth-child(7) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.menu-item:hover .dropdown li:nth-child(8) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+.menu-item:hover .dropdown li:nth-child(9) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+.menu-item:hover .dropdown li:nth-child(10) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.menu-item:hover .dropdown li:nth-child(11) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.menu-item:hover .dropdown li:nth-child(12) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+.menu-item:hover .dropdown li:nth-child(13) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+.menu-item:hover .dropdown li:nth-child(14) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
 
 .dropdown {
   position: absolute;
@@ -740,7 +772,7 @@ ul {
 }
 .dropdown li {
   display: none;
-  background-color: rgba(106, 25, 125, 0.5019607843);
+  background-color: rgba(106, 25, 125, 0.9019607843);
   opacity: 0;
   transition: color 0.3s;
   font-size: 20px;

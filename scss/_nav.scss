@@ -36,6 +36,30 @@ ul {
 		li:nth-child(6) {
 			animation-delay: 1s;
 		}
+		li:nth-child(7) {
+			animation-delay: 1.2s;
+		}
+		li:nth-child(8) {
+			animation-delay: 1.4s;
+		}
+		li:nth-child(9) {
+			animation-delay: 1.6s;
+		}
+		li:nth-child(10) {
+			animation-delay: 1.8s;
+		}
+		li:nth-child(11) {
+			animation-delay: 2s;
+		}
+		li:nth-child(12) {
+			animation-delay: 2.2s;
+		}
+		li:nth-child(13) {
+			animation-delay: 2.4s;
+		}
+		li:nth-child(14) {
+			animation-delay: 2.6s;
+		}
 	}
 }
 
@@ -47,7 +71,7 @@ ul {
 	// width: 300px;
 	li {
 		display: none;
-		background-color: #6a197d80;
+		background-color: #6a197de6;
 		opacity: 0;
 		transition: color 0.3s;
 		font-size: 20px;
