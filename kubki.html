@@ -30,7 +30,7 @@
                 <div>
                     <li class="menu-item">
                         <a class="nav__link" href="offers.html">Oferta</a>
-                        <ul class="dropdown">
+                        <!-- <ul class="dropdown">
                             <li class="dropdown__link"><a href="kubki.html">Kubki</a></li>
                             <li class="dropdown__link"><a href="koszulki.html">Koszulki</a></li>
                             <li class="dropdown__link"><a href="bluzy.html">Bluzy</a></li>
@@ -45,7 +45,7 @@
                             <li class="dropdown__link"><a href="slodycze.html">Słodycze</a></li>
                             <li class="dropdown__link"><a href="rozne.html">Różne</a></li>
                             <li class="dropdown__link"><a href="nie-wiem.html">Nie wiem</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                 </div>
                 <a class="nav__link" href="contact.html">kontakt</a>
@@ -74,6 +74,10 @@
         <h1 class="seo">DombArt</h1>
         <div class="header__text-box">
             <p class="header__title">kubki</p>
+            <div class="header__btn">
+                <button></button>
+                <button></button>
+            </div>
         </div>
         </a>
     </header>
@@ -81,7 +85,25 @@
     <!-- MAIN -->
     <main>
         <section id="Koszulki" class="boxs">
-            <div class="box">
+            <div class="cards">
+                <div class="card one one__btn">
+                    <a href="#box__first"><button>Zobacz</button></a>
+                    <div class="text">
+                        <h2 class="one__title">Kubki białe</h2>
+                        <button class="show">ZOBACZ WIĘCEJ</button>
+                     
+                    </div>
+                </div>
+                <div class="card one second__btn">
+                    <a href="#box__second"><button>Zobacz</button></a>
+                    <div class="text">
+                        <h2 class="one__title">Kubki kolorowe</h2>
+                        <button class="show">ZOBACZ WIĘCEJ</button>
+                     
+                    </div>
+                </div>
+            </div>
+            <div id="box__first" class="box box__first">
                 <div class="img-left">
                     <img class="active cups_first" src="./img/realization/2.webp" alt="">
                     <img class="cups_first" src="./img/realization/3.webp" alt="">
@@ -108,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div id="box__second" class="box box__second">
                 <div class="img-left">
                     <img class="active cups_second" src="./img/realization/2.webp" alt="">
                     <img class="cups_second" src="./img/realization/3.webp" alt="">
