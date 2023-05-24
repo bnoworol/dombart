@@ -64,9 +64,6 @@
 	.five {
 		background-image: url('../img/realization/24.webp');
 	}
-	.six {
-		background-image: url('../img/realization/26.webp');
-	}
 	.text {
 		display: flex;
 		flex-direction: column;
@@ -91,24 +88,24 @@
 
 
 
-.title {
-	display: flex;
-	justify-content: space-evenly;
-	&-content {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
-		button {
-			font-size: 5rem;
-			background-color: transparent;
-			border: none;
-			cursor: pointer;
-		}
-		h2 {
-			margin: 10px 0;
-			font-size: 6rem;
-		}
-	}
-}
+// .title {
+// 	display: flex;
+// 	justify-content: space-evenly;
+// 	&-content {
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		gap: 10px;
+// 		button {
+// 			font-size: 5rem;
+// 			background-color: transparent;
+// 			border: none;
+// 			cursor: pointer;
+// 		}
+// 		h2 {
+// 			margin: 10px 0;
+// 			font-size: 6rem;
+// 		}
+// 	}
+// }
 @import './_largeOffers.scss';
 @import './nav';

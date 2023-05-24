@@ -3,90 +3,6 @@
   border: 5px solid #a19b9b;
 }
 
-ul {
-  list-style: none;
-  font-size: 24px;
-}
-
-.menu-item {
-  list-style: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.menu-item:hover {
-  background-color: transparent;
-}
-.menu-item:hover .dropdown li {
-  display: block;
-  -webkit-animation: menu1 0.5s forwards;
-          animation: menu1 0.5s forwards;
-}
-.menu-item:hover .dropdown li:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.menu-item:hover .dropdown li:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.menu-item:hover .dropdown li:nth-child(4) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-.menu-item:hover .dropdown li:nth-child(5) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-.menu-item:hover .dropdown li:nth-child(6) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.dropdown {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.dropdown li {
-  display: none;
-  background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transition: color 0.3s;
-  font-size: 20px;
-  padding: 10px;
-}
-.dropdown li a {
-  text-decoration: none;
-  color: #000000;
-}
-.dropdown li:hover {
-  color: royalblue;
-}
-
-@-webkit-keyframes menu1 {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes menu1 {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .boxs {
   display: flex;
   justify-content: center;
@@ -226,22 +142,6 @@ body {
     transform: translate3d(-15000px, 0, 0);
   }
 }
-@-webkit-keyframes header {
-  from {
-    height: 100vh;
-  }
-  to {
-    height: 40vh;
-  }
-}
-@keyframes header {
-  from {
-    height: 100vh;
-  }
-  to {
-    height: 40vh;
-  }
-}
 @-webkit-keyframes left {
   from {
     transform: translateX(-100%);
@@ -330,6 +230,16 @@ body {
     z-index: 1;
   }
 }
+@-webkit-keyframes menu1 {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes menu1 {
   from {
     opacity: 0;
@@ -388,8 +298,7 @@ ul {
 }
 .dropdown li {
   display: none;
-  background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(106, 25, 125, 0.5019607843);
   opacity: 0;
   transition: color 0.3s;
   font-size: 20px;
@@ -401,4 +310,11 @@ ul {
 }
 .dropdown li:hover {
   color: royalblue;
+}
+
+@media (min-width: 992px) {
+  .header__title {
+    padding-top: 1.2em;
+    font-size: 8rem;
+  }
 }/*# sourceMappingURL=koszulki.css.map */

@@ -45,7 +45,7 @@ function addedBackground() {
 			el.style.backgroundColor = '#f5f5f5'
 		}
 		else if (navbarY <= 200) {
-			el.style.backgroundColor = '#0000001a'
+			el.style.backgroundColor = '#6a197d80'
 		}
 	})
 }
