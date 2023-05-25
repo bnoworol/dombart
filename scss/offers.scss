@@ -9,13 +9,14 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		width: 100vw;
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 	.card {
 		position: relative;
 		margin: 10px;
-		height: 220px;
-		width: 220px;
+		height: 300px;
+		width: 300px;
 		text-align: center;
 		background-position: center;
 		background-size: cover;
@@ -36,7 +37,17 @@
 			z-index: 1;
 			
 		}
-		a:hover ~ .text {
+		h2 {
+			display: flex;
+			justify-content: center;
+			color: $white;
+			font-size: 3rem;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.3);
+			padding-top: 20px;
+		}
+		a:hover ~ .text , h2:hover ~ .text {
 			clip-path: circle(120% at 50% 90%);
 		}
 		.show {
@@ -66,10 +77,37 @@
 	.five {
 		background-image: url('../img/realization/24.webp');
 	}
+	.six {
+		background-image: url('../img/realization/24.webp');
+	}
+	.seven {
+		background-image: url('../img/realization/24.webp');
+	}
+	.eight {
+		background-image: url('../img/realization/24.webp');
+	}
+	.nine {
+		background-image: url('../img/realization/24.webp');
+	}
+	.ten {
+		background-image: url('../img/realization/24.webp');
+	}
+	.eleven {
+		background-image: url('../img/realization/24.webp');
+	}
+	.twelve {
+		background-image: url('../img/realization/24.webp');
+	}
+	.threeten {
+		background-image: url('../img/realization/24.webp');
+	}
+	.fourteen {
+		background-image: url('../img/realization/24.webp');
+	}
 	.text {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
+		justify-content: center;
 		text-align: center;
 		position: absolute;
 		top: 0;
@@ -81,33 +119,5 @@
 		clip-path: circle(0 at 50% 90%);
 		transition: 0.8s;
 	}
-	h2 {
-		margin-bottom: 100px;
-		color: rgb(182, 179, 97);
-	}
 }
-
-
-
-
-// .title {
-// 	display: flex;
-// 	justify-content: space-evenly;
-// 	&-content {
-// 		display: flex;
-// 		flex-wrap: wrap;
-// 		gap: 10px;
-// 		button {
-// 			font-size: 5rem;
-// 			background-color: transparent;
-// 			border: none;
-// 			cursor: pointer;
-// 		}
-// 		h2 {
-// 			margin: 10px 0;
-// 			font-size: 6rem;
-// 		}
-// 	}
-// }
 @import './_largeOffers.scss';
-@import './nav';
