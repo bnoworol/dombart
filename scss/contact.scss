@@ -382,7 +382,7 @@
 }
 
 .left {
-	animation: left 1s 1s forwards;
+	animation: left .5s .5s forwards;
 	overflow: hidden;
 	background-color: #111;
 	transform: translateX(-100%);
@@ -394,7 +394,7 @@
 
 .right {
 	// height: auto;
-	animation: right 1s forwards;
+	animation: right .5s forwards;
 	overflow: hidden;
 	box-shadow: 2px 2px 18px 5px rgba(0, 0, 0, 0.5) inset;
 	transform: translateX(100%);

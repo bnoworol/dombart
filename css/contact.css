@@ -524,8 +524,8 @@ body {
 }
 
 .left {
-  -webkit-animation: left 1s 1s forwards;
-          animation: left 1s 1s forwards;
+  -webkit-animation: left 0.5s 0.5s forwards;
+          animation: left 0.5s 0.5s forwards;
   overflow: hidden;
   background-color: #111;
   transform: translateX(-100%);
@@ -536,8 +536,8 @@ body {
 }
 
 .right {
-  -webkit-animation: right 1s forwards;
-          animation: right 1s forwards;
+  -webkit-animation: right 0.5s forwards;
+          animation: right 0.5s forwards;
   overflow: hidden;
   box-shadow: 2px 2px 18px 5px rgba(0, 0, 0, 0.5) inset;
   transform: translateX(100%);
