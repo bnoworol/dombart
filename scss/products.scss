@@ -47,6 +47,7 @@
 		padding-top: 20px;
 	}
 	a:hover ~ .text,
+	button:hover ~ .text,
 	h2:hover ~ .text {
 		clip-path: circle(120% at 50% 90%);
 	}
@@ -61,11 +62,21 @@
 	}
 }
 // KOSZULKI i BLUZY
-.one {
-	background-image: url('../img/realization/31.webp');
+.cups {
+	.one {
+		background-image: url('../img/realization/15.webp');
+	}
+	.two {
+		background-image: url('../img/realization/31.webp');
+	}
 }
-.two {
-	background-image: url('../img/realization/15.webp');
+.shirt {
+	.one {
+		background-image: url('../img/realization/31.webp');
+	}
+	.two {
+		background-image: url('../img/realization/15.webp');
+	}
 }
 .text {
 	display: flex;
@@ -83,6 +94,13 @@
 	transition: 0.8s;
 }
 //
+.view {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+}
 .boxs {
 	display: flex;
 	justify-content: center;
@@ -108,6 +126,21 @@
 			display: none;
 		}
 		&__third {
+			display: none;
+		}
+		&__four {
+			display: none;
+		}
+		&__five {
+			display: none;
+		}
+		&__six {
+			display: none;
+		}
+		&__seven {
+			display: none;
+		}
+		&__eight {
 			display: none;
 		}
 		.img {

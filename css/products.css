@@ -47,6 +47,7 @@
   padding-top: 20px;
 }
 .card a:hover ~ .text,
+.card button:hover ~ .text,
 .card h2:hover ~ .text {
   -webkit-clip-path: circle(120% at 50% 90%);
           clip-path: circle(120% at 50% 90%);
@@ -61,11 +62,17 @@
   transform: translateX(-50%);
 }
 
-.one {
+.cups .one {
+  background-image: url("../img/realization/15.webp");
+}
+.cups .two {
   background-image: url("../img/realization/31.webp");
 }
 
-.two {
+.shirt .one {
+  background-image: url("../img/realization/31.webp");
+}
+.shirt .two {
   background-image: url("../img/realization/15.webp");
 }
 
@@ -84,6 +91,14 @@
   -webkit-clip-path: circle(0 at 50% 90%);
           clip-path: circle(0 at 50% 90%);
   transition: 0.8s;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .boxs {
@@ -110,6 +125,21 @@
   display: none;
 }
 .boxs .box__third {
+  display: none;
+}
+.boxs .box__four {
+  display: none;
+}
+.boxs .box__five {
+  display: none;
+}
+.boxs .box__six {
+  display: none;
+}
+.boxs .box__seven {
+  display: none;
+}
+.boxs .box__eight {
   display: none;
 }
 .boxs .box .img-left {
@@ -190,6 +220,21 @@
     display: none;
   }
   .boxs .box__third {
+    display: none;
+  }
+  .boxs .box__four {
+    display: none;
+  }
+  .boxs .box__five {
+    display: none;
+  }
+  .boxs .box__six {
+    display: none;
+  }
+  .boxs .box__seven {
+    display: none;
+  }
+  .boxs .box__eight {
     display: none;
   }
   .boxs .box .img-left {
