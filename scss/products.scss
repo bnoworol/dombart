@@ -64,18 +64,104 @@
 // KOSZULKI i BLUZY
 .cups {
 	.one {
-		background-image: url('../img/realization/15.webp');
+		background-image: url('../img/realization/22.webp');
 	}
 	.two {
-		background-image: url('../img/realization/31.webp');
+		background-image: url('../img/realizatioon/31.webp');
 	}
 }
 .shirt {
 	.one {
-		background-image: url('../img/realization/31.webp');
+		background-image: url('../img/realization/26.webp');
 	}
 	.two {
-		background-image: url('../img/realization/15.webp');
+		background-image: url('../img/realization/27.webp');
+	}
+	.three {
+		background-image: url('../img/realizatioon/1.webp');
+	}
+}
+.hoodie {
+	.one {
+		background-image: url('../img/realization/3.webp');
+	}
+	.two {
+		background-image: url('../img/realizatioon/3.webp');
+	}
+	.three {
+		background-image: url('../img/realizatioon/3.webp');
+	}
+}
+.textiles {
+	.one {
+		background-image: url('../img/realization/7.webp');
+	}
+	.two {
+		background-image: url('../img/realization/14.webp');
+	}
+	.three {
+		background-image: url('../img/realization/11.webp');
+	}
+	.four {
+		background-image: url('../img/realizatioon/3.webp');
+	}
+}
+.awards {
+	.one {
+		background-image: url('../img/realizatioon/7.webp');
+	}
+	.two {
+		background-image: url('../img/realization/5.webp');
+	}
+	.three {
+		background-image: url('../img/realization/9.webp');
+	}
+	.four {
+		background-image: url('../img/realizatioon/3.webp');
+	}
+	.five {
+		background-image: url('../img/realizatioon/3.webp');
+	}
+}
+.thanks {
+	.one {
+		background-image: url('../img/realization/10.webp');
+	}
+	.two {
+		background-image: url('../img/realization/8.webp');
+	}
+	.three {
+		background-image: url('../img/realization/12.webp');
+	}
+}
+.buttons {
+	.one {
+		background-image: url('../img/realizatioon/10.webp');
+	}
+	.two {
+		background-image: url('../img/realization/19.webp');
+	}
+	.three {
+		background-image: url('../img/realizatioon/12.webp');
+	}
+}
+.sweets {
+	.one {
+		background-image: url('../img/realization/2.webp');
+	}
+	.two {
+		background-image: url('../img/realizatioon/19.webp');
+	}
+	.three {
+		background-image: url('../img/realizatioon/12.webp');
+	}
+}
+.imprint {
+	.one {
+		background-image: url('../img/realizatioon/2.webp');
+	}
+	.two {
+		background-image: url('../img/realizatioon/19.webp');
 	}
 }
 .text {
@@ -158,8 +244,8 @@
 				order: 2;
 				img {
 					transition: 0.5s;
-					width: 15%;
-					height: 15%;
+					width: 25%;
+					height: 25%;
 					gap: 10px;
 					border-radius: 25px;
 				}
@@ -174,8 +260,8 @@
 				padding: 1.5em;
 				order: 1;
 				img {
-					width: 60%;
-					height: 60%;
+					width: 100%;
+					height: 100%;
 					border-radius: 25px;
 				}
 			}

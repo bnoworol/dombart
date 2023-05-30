@@ -98,7 +98,9 @@ function ShowProducts1() {
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 function ShowProducts2() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -107,7 +109,9 @@ function ShowProducts2() {
 	boxThird.style.display = 'none'
     boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 function ShowProducts3() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -116,7 +120,9 @@ function ShowProducts3() {
 	boxThird.style.display = 'flex'
     boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 function ShowProducts4() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -125,7 +131,9 @@ function ShowProducts4() {
 	boxThird.style.display = 'none'
     boxFour.style.display = 'flex'
 	boxFive.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 function ShowProducts5() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -134,7 +142,9 @@ function ShowProducts5() {
 	boxThird.style.display = 'none'
     boxFour.style.display = 'none'
 	boxFive.style.display = 'flex'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 
 btnFirst.addEventListener('click', ShowProducts1)

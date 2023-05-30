@@ -62,21 +62,27 @@ function ShowProducts1() {
 	boxFirst.style.display = 'flex'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 function ShowProducts2() {
 	html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'flex'
 	boxThird.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 function ShowProducts3() {
 	html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'flex'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50);
 }
 
 btnFirst.addEventListener('click', ShowProducts1)

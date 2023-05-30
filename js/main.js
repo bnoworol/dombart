@@ -40,14 +40,14 @@ function addedBackground() {
 		navDesktop.style.backgroundColor = 'transparent'
 		arrowUp.style.visibility = 'hidden'
 	}
-	const item = dropdownLinks.forEach(el => {
-		if (navbarY >= 200) {
-			el.style.backgroundColor = '#f5f5f5'
-		}
-		else if (navbarY <= 200) {
-			el.style.backgroundColor = '#6a197de6'
-		}
-	})
+	// const item = dropdownLinks.forEach(el => {
+	// 	if (navbarY >= 200) {
+	// 		el.style.backgroundColor = '#f5f5f5'
+	// 	}
+	// 	else if (navbarY <= 200) {
+	// 		el.style.backgroundColor = '#6a197de6'
+	// 	}
+	// })
 }
 
 ;[navBtn, allNavItemsClose].map(allNavItemsClose => navBtn.addEventListener('click', handleNav))

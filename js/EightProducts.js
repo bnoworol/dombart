@@ -155,7 +155,9 @@ function ShowProducts1() {
 	boxSix.style.display = 'none'
 	boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 function ShowProducts2() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -167,7 +169,9 @@ function ShowProducts2() {
 	boxSix.style.display = 'none'
 	boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 function ShowProducts3() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -179,7 +183,9 @@ function ShowProducts3() {
 	boxSix.style.display = 'none'
 	boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 function ShowProducts4() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -191,7 +197,9 @@ function ShowProducts4() {
 	boxSix.style.display = 'none'
 	boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 function ShowProducts5() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -203,7 +211,9 @@ function ShowProducts5() {
 	boxSix.style.display = 'none'
 	boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 function ShowProducts6() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -215,7 +225,9 @@ function ShowProducts6() {
 	boxSix.style.display = 'flex'
 	boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 function ShowProducts7() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -227,7 +239,9 @@ function ShowProducts7() {
 	boxSix.style.display = 'none'
 	boxSeven.style.display = 'flex'
 	boxEight.style.display = 'none'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 function ShowProducts8() {
 	html.style.scrollPaddingTop = '140' + 'px'
@@ -239,7 +253,9 @@ function ShowProducts8() {
 	boxSix.style.display = 'none'
 	boxSeven.style.display = 'none'
 	boxEight.style.display = 'flex'
-	view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	setTimeout(() => {
+		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+	}, 50)
 }
 
 btnFirst.addEventListener('click', ShowProducts1)
