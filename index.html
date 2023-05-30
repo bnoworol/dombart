@@ -58,11 +58,11 @@
             <h2 class="header__text-title">Pracownia reklamy</h2>
             <p class="header__text">nadruki | puchary | naklejki | wydruki | podziękowania</p>
         </div>
-        <a href="#aboutus">
+ 
             <div class="header__arrow">
                 <img src="./img/icon/arrow-down.svg" alt="" class="header__arrow-icon">
             </div>
-        </a>
+
     </header>
 
     <!-- MAIN -->
@@ -240,8 +240,10 @@
     <script>
         const arrow = document.querySelector('.header__arrow')
         const html = document.querySelector('html')
+        const about = document.querySelector('.aboutus')
         arrow.addEventListener('click', () => {
-            html.style.scrollPaddingTop = '140' + 'px'
+            // html.style.scrollPaddingTop = '140' + 'px'
+		about.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
         })
         const logo = document.querySelector('.nav__logo')
         function addedLogo() {

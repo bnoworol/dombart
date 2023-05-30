@@ -103,7 +103,7 @@
 			border: 1px solid $darker;
 			border-radius: 50%;
 			z-index: 3;
-
+			cursor: pointer;
 			&::before {
 				position: absolute;
 				top: 0;

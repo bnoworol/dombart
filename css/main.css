@@ -626,6 +626,7 @@ body {
     border: 1px solid #000000;
     border-radius: 50%;
     z-index: 3;
+    cursor: pointer;
   }
   .header__arrow::before {
     position: absolute;
