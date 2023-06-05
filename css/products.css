@@ -142,7 +142,7 @@
   background-image: url("../img/realization/2.webp");
 }
 .sweets .two {
-  background-image: url("../img/realizatioon/19.webp");
+  background-image: url("../img/offers/lizak/lizak.webp");
 }
 .sweets .three {
   background-image: url("../img/realizatioon/12.webp");
@@ -153,6 +153,17 @@
 }
 .imprint .two {
   background-image: url("../img/realizatioon/19.webp");
+}
+
+.stamps .one {
+  background-image: url("../img/offers/pieczatka/pieczatka3.webp");
+}
+.stamps .two {
+  background-image: url("../img/realizatioon/19.webp");
+}
+
+.various .five {
+  background-image: url("../img/offers/ramka3D/blaszka1.webp");
 }
 
 .text {
