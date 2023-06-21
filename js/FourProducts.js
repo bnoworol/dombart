@@ -79,7 +79,7 @@ imgLeftFour.forEach(el => {
 
 //
 function ShowProducts1() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'flex'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
@@ -90,7 +90,7 @@ function ShowProducts1() {
 	}, 50)
 }
 function ShowProducts2() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'flex'
 	boxThird.style.display = 'none'
@@ -101,7 +101,7 @@ function ShowProducts2() {
 	}, 50)
 }
 function ShowProducts3() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'flex'
@@ -112,7 +112,7 @@ function ShowProducts3() {
 	}, 50)
 }
 function ShowProducts4() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'

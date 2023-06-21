@@ -145,7 +145,7 @@
   background-image: url("../img/offers/lizak/lizak.webp");
 }
 .sweets .three {
-  background-image: url("../img/realizatioon/12.webp");
+  background-image: url("../img/offers/gumy/gumyy_wynik_wynik_webP.webp");
 }
 
 .imprint .one {
@@ -156,14 +156,49 @@
 }
 
 .stamps .one {
-  background-image: url("../img/offers/pieczatka/pieczatka3.webp");
+  background-image: url("../img/offers/pieczatka/pieczatka4_wynik_wynik_webP.webp");
 }
 .stamps .two {
   background-image: url("../img/realizatioon/19.webp");
 }
 
+.various .one {
+  background-image: url("../img/offers/skrzynkaWino/wino1.webp");
+}
+.various .two {
+  background-image: url("../img/offers/pudelkoBlaszka/blaszka1.webp");
+}
+.various .three {
+  background-image: url("../img/offers/pudelkoPrzegroda/przegroda2.webp");
+}
+.various .four {
+  background-image: url("../img/offers/nosidlo/nosidlo3.webp");
+}
 .various .five {
-  background-image: url("../img/offers/ramka3D/blaszka1.webp");
+  background-image: url("../img/offers/ramka3D/ramka3d.webp");
+}
+.various .six {
+  background-image: url("../img/offers/magnesy/magnesy_wynik_wynik_webP.webp");
+}
+.various .eight {
+  background-image: url("../img/offers/bombka/IMG_20230110_132214_wynik_wynik_webP.webp");
+}
+
+.stickers .one {
+  background-image: url("../img/offers/naklejki/wlepki_wynik_wynik_webP.webp");
+}
+.stickers .two {
+  background-image: url("../img/offers/naklejki/naklejkiZew/naklejka zeew_wynik_wynik_webP.webp");
+}
+
+.prints .one {
+  background-image: url("../img/offers/zaproszenia/ZAPPPPROO_wynik_wynik_webP.webp");
+}
+.prints .two {
+  background-image: url("../img/offers/winetka/winietaa_wynik_wynik_webP.webp");
+}
+.prints .three {
+  background-image: url("../img/offers/zawieszkiAlkohol/zawieszka_wynik_wynik_webP.webp");
 }
 
 .text {
@@ -230,6 +265,9 @@
   display: none;
 }
 .boxs .box__eight {
+  display: none;
+}
+.boxs .box__ {
   display: none;
 }
 .boxs .box .img-left {
@@ -325,6 +363,9 @@
     display: none;
   }
   .boxs .box__eight {
+    display: none;
+  }
+  .boxs .box__nine {
     display: none;
   }
   .boxs .box .img-left {
