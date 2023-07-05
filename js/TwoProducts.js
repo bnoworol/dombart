@@ -10,8 +10,12 @@ const btnFirst = document.querySelector('.one__btn')
 const btnSecond = document.querySelector('.second__btn')
 
 
+
+
+
 const html = document.querySelector('html')
 const view = document.querySelector('.view')
+
 // KUBKI
 function first(e) {
 	imgLeftFirst.forEach(el => {
