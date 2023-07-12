@@ -5,7 +5,7 @@ const imgLeftThird = document.querySelectorAll('.img-left > img.cups_third')
 const imgLeftFour = document.querySelectorAll('.img-left > img.cups_four')
 const imgLeftFive = document.querySelectorAll('.img-left > img.cups_five')
 const imgLeftSix = document.querySelectorAll('.img-left > img.cups_six')
-const imgLeftSeven = document.querySelectorAll('.img-left > img.cups_seven')
+// const imgLeftSeven = document.querySelectorAll('.img-left > img.cups_seven')
 const imgLeftEight = document.querySelectorAll('.img-left > img.cups_eight')
 const imgLeftNine = document.querySelectorAll('.img-left > img.cups_nine')
 
@@ -15,7 +15,7 @@ const imgCenterThird = document.querySelector('.img-center > img.cups_third')
 const imgCenterFour = document.querySelector('.img-center > img.cups_four')
 const imgCenterFive = document.querySelector('.img-center > img.cups_five')
 const imgCenterSix = document.querySelector('.img-center > img.cups_six')
-const imgCenterSeven = document.querySelector('.img-center > img.cups_seven')
+// const imgCenterSeven = document.querySelector('.img-center > img.cups_seven')
 const imgCenterEight = document.querySelector('.img-center > img.cups_eight')
 const imgCenterNine = document.querySelector('.img-center > img.cups_nine')
 
@@ -25,7 +25,7 @@ const boxThird = document.querySelector('.box__third')
 const boxFour = document.querySelector('.box__four')
 const boxFive = document.querySelector('.box__five')
 const boxSix = document.querySelector('.box__six')
-const boxSeven = document.querySelector('.box__seven')
+// const boxSeven = document.querySelector('.box__seven')
 const boxEight = document.querySelector('.box__eight')
 const boxNine = document.querySelector('.box__nine')
 
@@ -122,24 +122,24 @@ function six(e) {
 imgLeftSix.forEach(el => {
 	el.addEventListener('click', six)
 })
-function seven(e) {
-	imgLeftSeven.forEach(el => {
-		el.classList.remove('active')
-		function chooseImg(e) {
-			imgCenterSeven.src = e.target.src
-			e.target.classList.add('active')
-		}
-		chooseImg(e)
-	})
-}
-imgLeftSeven.forEach(el => {
-	el.addEventListener('click', seven)
-})
+// function seven(e) {
+// 	imgLeftSeven.forEach(el => {
+// 		el.classList.remove('active')
+// 		function chooseImg(e) {
+// 			imgCenterSeven.src = e.target.src
+// 			e.target.classList.add('active')
+// 		}
+// 		chooseImg(e)
+// 	})
+// }
+// imgLeftSeven.forEach(el => {
+// 	el.addEventListener('click', seven)
+// })
 function eight(e) {
 	imgLeftEight.forEach(el => {
 		el.classList.remove('active')
 		function chooseImg(e) {
-			imgCenterEimgLeftEight.src = e.target.src
+			imgCenterEight.src = e.target.src
 			e.target.classList.add('active')
 		}
 		chooseImg(e)
@@ -152,7 +152,7 @@ function nine(e) {
 	imgLeftNine.forEach(el => {
 		el.classList.remove('active')
 		function chooseImg(e) {
-			imgCenterEimgLeftNine.src = e.target.src
+			imgCenterNine.src = e.target.src
 			e.target.classList.add('active')
 		}
 		chooseImg(e)
@@ -163,14 +163,14 @@ imgLeftNine.forEach(el => {
 })
 //
 function ShowProducts1() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'flex'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
 	boxSix.style.display = 'none'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
 	boxNine.style.display = 'none'
 	setTimeout(() => {
@@ -178,14 +178,14 @@ function ShowProducts1() {
 	}, 50)
 }
 function ShowProducts2() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'flex'
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
 	boxSix.style.display = 'none'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
 	boxNine.style.display = 'none'
 	setTimeout(() => {
@@ -193,14 +193,14 @@ function ShowProducts2() {
 	}, 50)
 }
 function ShowProducts3() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'flex'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
 	boxSix.style.display = 'none'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
 	boxNine.style.display = 'none'
 	setTimeout(() => {
@@ -208,14 +208,14 @@ function ShowProducts3() {
 	}, 50)
 }
 function ShowProducts4() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'flex'
 	boxFive.style.display = 'none'
 	boxSix.style.display = 'none'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
 	boxNine.style.display = 'none'
 	setTimeout(() => {
@@ -223,14 +223,14 @@ function ShowProducts4() {
 	}, 50)
 }
 function ShowProducts5() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'flex'
 	boxSix.style.display = 'none'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
 	boxNine.style.display = 'none'
 	setTimeout(() => {
@@ -238,44 +238,44 @@ function ShowProducts5() {
 	}, 50)
 }
 function ShowProducts6() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
 	boxSix.style.display = 'flex'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
 	boxNine.style.display = 'none'
 	setTimeout(() => {
 		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
 	}, 50)
 }
-function ShowProducts7() {
-	html.style.scrollPaddingTop = '140' + 'px'
-	boxFirst.style.display = 'none'
-	boxSecond.style.display = 'none'
-	boxThird.style.display = 'none'
-	boxFour.style.display = 'none'
-	boxFive.style.display = 'none'
-	boxSix.style.display = 'none'
-	boxSeven.style.display = 'flex'
-	boxEight.style.display = 'none'
-	boxNine.style.display = 'none'
-	setTimeout(() => {
-		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
-	}, 50)
-}
+// function ShowProducts7() {
+// 	html.style.scrollPaddingTop = '140' + 'px'
+// 	boxFirst.style.display = 'none'
+// 	boxSecond.style.display = 'none'
+// 	boxThird.style.display = 'none'
+// 	boxFour.style.display = 'none'
+// 	boxFive.style.display = 'none'
+// 	boxSix.style.display = 'none'
+// 	boxSeven.style.display = 'flex'
+// 	boxEight.style.display = 'none'
+// 	boxNine.style.display = 'none'
+// 	setTimeout(() => {
+// 		view.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })
+// 	}, 50)
+// }
 function ShowProducts8() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
 	boxSix.style.display = 'none'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'flex'
 	boxNine.style.display = 'none'
 	setTimeout(() => {
@@ -283,14 +283,14 @@ function ShowProducts8() {
 	}, 50)
 }
 function ShowProducts9() {
-	html.style.scrollPaddingTop = '140' + 'px'
+	// html.style.scrollPaddingTop = '140' + 'px'
 	boxFirst.style.display = 'none'
 	boxSecond.style.display = 'none'
 	boxThird.style.display = 'none'
 	boxFour.style.display = 'none'
 	boxFive.style.display = 'none'
 	boxSix.style.display = 'none'
-	boxSeven.style.display = 'none'
+	// boxSeven.style.display = 'none'
 	boxEight.style.display = 'none'
 	boxNine.style.display = 'flex'
 	setTimeout(() => {
@@ -304,6 +304,6 @@ btnThird.addEventListener('click', ShowProducts3)
 btnFour.addEventListener('click', ShowProducts4)
 btnFive.addEventListener('click', ShowProducts5)
 btnSix.addEventListener('click', ShowProducts6)
-btnSeven.addEventListener('click', ShowProducts7)
+// btnSeven.addEventListener('click', ShowProducts7)
 btnEight.addEventListener('click', ShowProducts8)
 btnNine.addEventListener('click', ShowProducts9)

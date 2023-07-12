@@ -45,7 +45,7 @@
 	}
 
 	.aboutus {
-		background-image: url('../img/aboutus/aboutus_big.jpg');
+		background-image: url('../img/aboutus/aboutus_small.webp');
 		&__box {
 			display: flex;
 			flex-direction: row;
@@ -69,7 +69,7 @@
 		}
 	}
 	.footer {
-		background-image: url('../img/header/ciemne_header.jpg');
+		background-image: url('../img/header/ciemne_header.webp');
 		background-size: cover;
 		&-down {
 			display: flex;

@@ -328,7 +328,7 @@ body {
   top: 0;
   width: 100vw;
   height: 40vh;
-  background-image: url("../img/header/jasne_header.jpg");
+  background-image: url("../img/header/jasne_header.webp");
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -377,7 +377,7 @@ body {
 }
 
 .footer {
-  background-image: url("../img/header/ciemne_header.jpg");
+  background-image: url("../img/header/ciemne_header.webp");
   background-size: cover;
   height: 100%;
 }
@@ -605,7 +605,7 @@ body {
     max-width: 1200px;
   }
   .footer {
-    background-image: url("../img/header/ciemne_header.jpg");
+    background-image: url("../img/header/ciemne_header.webp");
     background-size: cover;
   }
   .footer-down {

@@ -319,7 +319,7 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/header/jasne_header.jpg");
+  background-image: url("../img/header/jasne_header.webp");
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -370,7 +370,7 @@ body {
 }
 
 .aboutus {
-  background-image: url("../img/aboutus/aboutus_small.jpg");
+  background-image: url("../img/aboutus/aboutus_big.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -442,7 +442,7 @@ body {
 }
 
 .footer {
-  background-image: url("../img/header/ciemne_header.jpg");
+  background-image: url("../img/header/ciemne_header.webp");
   background-size: cover;
   height: 100%;
 }
@@ -570,7 +570,7 @@ body {
     max-width: 1200px;
   }
   .aboutus {
-    background-image: url("../img/aboutus/aboutus_big.jpg");
+    background-image: url("../img/aboutus/aboutus_small.webp");
   }
   .aboutus__box {
     display: flex;
@@ -595,7 +595,7 @@ body {
     font-size: 3rem;
   }
   .footer {
-    background-image: url("../img/header/ciemne_header.jpg");
+    background-image: url("../img/header/ciemne_header.webp");
     background-size: cover;
   }
   .footer-down {
